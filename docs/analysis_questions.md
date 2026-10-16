@@ -32,13 +32,13 @@ To support the 2027 expansion strategy, your analysis must answer the following:
 
 
 
-1\. \*\*District Valuation:\*\* Which Cairo districts (e.g., New Cairo, Sheikh Zayed, Maadi, Nasr City) command the highest median rent and the highest price per square meter (EGP/mÂ²)?
+1. **District Valuation:** Which Cairo districts (e.g., New Cairo, Sheikh Zayed, Maadi, Nasr City) command the highest median rent and the highest price per square meter (EGP/m²)?
 
-2\. \*\*Feature Importance:\*\* How do specific property featuresâ€”primarily total square meterage, number of bedrooms, and furnishing status (Unfurnished, Semi-Furnished, Fully-Furnished)â€”correlate with the final listing price?
+2. **Feature Importance:** How do specific property features—primarily total square meterage, number of bedrooms, and furnishing status (Unfurnished, Semi-Furnished, Fully-Furnished)—correlate with the final listing price?
 
-3\. \*\*Market Momentum:\*\* Based on month-on-month data, which neighborhoods are experiencing the most aggressive rent increases, indicating high tenant demand or gentrification?
+3. **Market Momentum:** Based on month-on-month data, which neighborhoods are experiencing the most aggressive rent increases, indicating high tenant demand or gentrification?
 
-4\. \*\*Data Integrity:\*\* What proportion of the original scrape consisted of duplicate listings or extreme outliers (e.g., phantom listings priced at 1 EGP or 1,000,000 EGP/month), and how does removing them shift the baseline market averages?
+4. **Data Integrity:** What proportion of the raw benchmark dataset consisted of duplicate listings or extreme outliers (e.g., phantom listings priced at 1 EGP or 1,000,000 EGP/month), and how does removing them shift the baseline market averages?
 
 
 

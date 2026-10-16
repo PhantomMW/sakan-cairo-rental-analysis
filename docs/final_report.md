@@ -32,15 +32,19 @@ To assist Sakan's leadership in immediately prioritizing feasibility studies wit
 
 | Candidate District | Strategic Segment | Why It Is a Candidate (Listing Strengths) | Sample Reliability Tier | Mandatory Additional Commercial Data Required Before Investment |
 |---|---|---|---|---|
-| **New Cairo** | Primary Growth Anchor | High volume ($n=194$), steady smoothed appreciation (+13.8%), balanced median rent (EGP 35,750) and size-normalized rate (EGP 221.23/m²) | **Tier 1 (High Reliability)** | Lead-to-viewing conversion rate, tenant acquisition costs (CAC), unit turnover vacancy intervals in newer compounds. |
+| **New Cairo** | Primary Growth Anchor | High volume ($n=194$), steady smoothed appreciation (+13.8%), balanced core median rent (EGP 35,750) and size-normalized rate (EGP 221.23/m²) | **Tier 1 (High Reliability)** | Lead-to-viewing conversion rate, tenant acquisition costs (CAC), unit turnover vacancy intervals in newer compounds. |
 | **Zamalek** | Prime Luxury Corridor | Highest market median rent (EGP 44,250) and rate/m² (EGP 283.00/m²), consistent luxury appreciation (+36.0% smoothed) | **Tier 2 (Moderate Reliability)** | Landlord concession habits, building renovation & elevator capex overheads, foreign-currency vs local tenant contract ratios. |
-| **6th of October** | West Cairo Anchor | Substantial volume ($n=156$), strong baseline expansion (+22.8% smoothed), accessible entry rent (EGP 18,250) | **Tier 1 (High Reliability)** | Commute tolerance to central Cairo, developer handover pipeline, tenant credit profiles. |
-| **Heliopolis** | Established East Hub | Large volume ($n=129$), perfectly stable appreciation (+25.0% under both raw and smoothed methods), high metro connectivity | **Tier 1 (High Reliability)** | Aging property maintenance overheads, tenant retention duration, commercial vs residential zoning demand. |
+| **6th of October** | West Cairo Anchor | Substantial volume ($n=156$), strong baseline expansion (+22.8% smoothed), accessible core median rent (EGP 18,000, August EGP 18,250) | **Tier 1 (High Reliability)** | Commute tolerance to central Cairo, developer handover pipeline, tenant credit profiles. |
+| **Heliopolis** | Established East Hub | Large volume ($n=129$), perfectly stable appreciation (+25.0% under both raw and smoothed methods), balanced core median (EGP 24,500; EGP 162.44/m²), high metro connectivity | **Tier 1 (High Reliability)** | Aging property maintenance overheads, tenant retention duration, commercial vs residential zoning demand. |
 | **Maadi** | Premium Expatriate Corridor | Large volume ($n=153$), steady low-volatility appreciation (+8.1% smoothed), premium median (EGP 34,500) | **Tier 1 (High Reliability)** | Corporate and embassy lease renewal cycles, standalone villa vs apartment vacancy rates. |
 | **Shoubra & Faisal** | High-Density Accessible Hubs | High listing volume ($n=52, 44$), accessible entry rents (EGP 8,500 & 9,500), low price/m² (<EGP 65/m²) | **Tier 3 / 4 (Sampling Drift)** | Default rates, cash-collection operational overheads, informal broker commissions, legal lease enforcement efficacy. |
 
 > [!IMPORTANT]
-> **Executive Guidance:** High advertised asking prices represent landlord supply intentions, NOT proven platform revenue. Sakan should never commit capital to premium corridors (e.g. Zamalek or New Cairo) based solely on high advertised rents without verifying actual booking conversions, occupancy rates, and tenant acquisition economics.
+> **Executive Guidance & Commercial Principles:**
+> 1. **High Asking Rent $\neq$ High Demand:** Asking rents reflect landlord asking prices, not tenant willingness or ability to pay. Expensive properties often experience extended days-on-market and high vacancy.
+> 2. **Highest Rent $\neq$ Most Profitable:** High gross rental figures do not imply superior net yield or ROI. Capital expenditure, operating overhead, vacancy intervals, and tenant acquisition costs (CAC) determine commercial viability.
+> 3. **Sample Size & Outlier Sensitivity:** Trajectories in thin-sample districts (e.g. Madinaty or Rehab City) are heavily distorted by small monthly counts and extreme individual listings; multi-month smoothing and sample gates are strictly required.
+> 4. **Advertised Prices vs. Closed Deals:** Portal listings represent initial landlord aspirations prior to discounts, negotiations, and rent-free periods.
 
 ---
 
@@ -115,7 +119,7 @@ The project defines distinct analytical populations tailored to the specific dat
 
 ### 3.4 Data Provenance, Analytical Nature, and Terms of Use
 
-- **Data Nature (Semi-Synthetic Benchmark Dataset):** The dataset is a **semi-synthetic / simulated research benchmark dataset** specifically engineered to model the statistical distribution of advertised rental properties across Greater Cairo. It replicates the listing structures found on leading Egyptian real estate portals (e.g., Property Finder, Aqarmap, OLX) and intentionally incorporates realistic web-scraping artifacts—such as exact duplicate rows, unstandardized currency strings ("10,000", "27500 EGP"), inconsistent furnishing labels, missing fields, and extreme high-leverage outliers (such as EGP 1,000,000 asking rents and 22,300 m² property sizes). These anomalies are systematically injected to stress-test data cleaning pipelines, audit mechanisms, and non-parametric statistical robustness. It is **not** an actual collection of verified physical market transactions.
+- **Data Nature (Semi-Synthetic Benchmark Dataset):** The dataset is a **semi-synthetic / simulated research benchmark dataset** specifically engineered to model the statistical distribution of advertised rental properties across Greater Cairo. It replicates the listing structures found on leading Egyptian real estate portals (e.g., Property Finder, Aqarmap, OLX) and intentionally incorporates realistic simulated portal listing artifacts—such as exact duplicate rows, unstandardized currency strings ("10,000", "27500 EGP"), inconsistent furnishing labels, missing fields, and extreme high-leverage outliers (such as EGP 1,000,000 asking rents and 22,300 m² property sizes). These anomalies are systematically injected to stress-test data cleaning pipelines, audit mechanisms, and non-parametric statistical robustness. It is **not** an actual collection of verified physical market transactions.
 - **Geographic Coordinates (Approximate & Centroid-Based):** The latitude and longitude fields are **approximate, centroid-anchored coordinates with simulated spatial dispersion (jitter)** around Greater Cairo district hubs. They are engineered to enable geospatial cluster analysis, multi-layer GIS visualization, and density heatmaps in the interactive dashboard. They do **not** represent verified cadastral surveys, physical GPS coordinates, or identifiable private street addresses.
 - **Temporal Window:** The simulated observation horizon spans a 12-month calendar period from September 2025 through August 2026. These time-series trends illustrate analytical workflow methods and must not be cited as macroeconomic evidence of real-world Egyptian property market inflation.
 - **Analytical & Educational Scope:** This project is designed as an end-to-end data engineering, statistical audit, and portfolio case study. It is not an officially verified representation of completed transactions in the Greater Cairo rental market.
@@ -261,9 +265,11 @@ The following districts have relatively high median monthly rents in the core el
 | Sheikh Zayed | 150 | 30,000 | 206.49 |
 | Mohandeseen | 110 | 26,000 | 176.36 |
 | Rehab City | 69 | 26,000 | 165.70 |
-| Dokki | 74 | 25,750 | 185.00 |
+| Dokki | 74 | 25,750 | 168.48 |
 
-These districts may be useful candidates for further investigation into premium rental supply. However, high advertised rent does not necessarily indicate stronger tenant demand, better occupancy, or higher profitability.
+These districts represent primary candidates for further investigation into premium rental supply. However, two critical business distinctions must be maintained:
+- **Asking Price $\neq$ Real Tenant Demand:** High advertised asking rents reflect owner expectations, not deal liquidity. Without booking conversion and days-on-market metrics, high prices can simply reflect high vacancy intervals.
+- **Highest Rent $\neq$ Highest Profitability:** High gross rental revenues do not imply superior investment returns. Acquisition capital, refurbishment overheads, tenant acquisition costs, and maintenance outlays must be evaluated before drawing financial conclusions.
 
 ### 6.3 Rent per Square Meter
 
@@ -498,9 +504,9 @@ To determine whether asking-rent momentum reflects genuine market trends or sing
 
 | District | Total Listings | Sep / Aug Counts | Raw Endpoint Δ (%) | Q1 / Q4 Counts | Smoothed Quarterly Δ (%) | Drift (Smoothed - Raw) | Sensitivity Interpretation |
 |---|---:|---:|---:|---:|---:|---:|---|
-| **New Cairo** | 193 | 12 / 10 | +18.46% | 47 / 47 | +13.85% | -4.61% | **Highly Robust:** Consistent upward momentum across large samples. |
+| **New Cairo** | 193 | 12 / 10 | +18.46% | 47 / 47 | +13.85% | -4.62% | **Highly Robust:** Consistent upward momentum across large samples. |
 | **Heliopolis** | 128 | 14 / 8 | +25.00% | 34 / 31 | +25.00% | 0.00% | **Remarkably Stable:** Exactly identical appreciation under both methods. |
-| **6th of October** | 154 | 8 / 12 | +14.06% | 38 / 41 | +22.81% | +8.75% | **Confirmed Growth:** Multi-month smoothing indicates stronger baseline expansion. |
+| **6th of October** | 154 | 8 / 12 | +14.06% | 38 / 41 | +22.81% | +8.74% | **Confirmed Growth:** Multi-month smoothing indicates stronger baseline expansion. |
 | **Maadi** | 151 | 11 / 19 | +5.48% | 36 / 40 | +8.15% | +2.67% | **Stable Prime Anchor:** Steady low single-digit appreciation. |
 | **Sheikh Zayed** | 149 | 12 / 8 | -7.08% | 40 / 37 | +10.34% | +17.42% | **Methodology Divergence:** August dipped, but quarterly baseline remains positive (+10.3%). |
 | **Nasr City** | 174 | 14 / 20 | -21.69% | 43 / 48 | -10.26% | +11.43% | **Confirmed Softening:** Advertised medians softened under both methodologies. |
@@ -573,7 +579,7 @@ The project also generates:
 The interactive map provides an executive geospatial view of **1,843 rental listings** across 26 Greater Cairo districts.
 
 #### Sample Reconciliation Note:
-The map displays 1,843 records, which differs from the 1,851 core eligible records. Geospatial visualization strictly requires valid latitude and longitude coordinates within the Greater Cairo bounding box ($[29.4, 30.7]^\circ\text{N}, [30.5, 32.2]^\circ\text{E}$) and excludes extreme scraper boundary artifacts ($\le 500$ or $\ge 500,000$ EGP) to maintain colorscale contrast and cluster map stability.
+The map displays 1,843 records, which differs from the 1,851 core eligible records. Geospatial visualization strictly requires valid latitude and longitude coordinates within the Greater Cairo bounding box ($[29.4, 30.7]^\circ\text{N}, [30.5, 32.2]^\circ\text{E}$) and excludes extreme simulated portal boundary artifacts ($\le 500$ or $\ge 500,000$ EGP) to maintain colorscale contrast and cluster map stability.
 
 #### Key Features:
 - Interactive map navigation and multi-layer zoom controls.
@@ -603,13 +609,15 @@ Total rent can favor larger properties, while rent per square meter provides a s
 
 Include listing count and sensitivity results when ranking districts to reduce the risk of overinterpreting small samples or unusual observations.
 
-### Recommendation 2 — Investigate Premium Districts Without Assuming Profitability
+### Recommendation 2 — Investigate Premium Districts Without Assuming Demand or Profitability
 
-Zamalek, New Cairo, Maadi, Sheikh Zayed, and Mohandeseen have relatively high median rents in the core dataset.
+Zamalek, New Cairo, Maadi, Sheikh Zayed, Mohandeseen, Rehab City, and Dokki have relatively high median rents in the core dataset.
 
-They are reasonable candidates for further research into premium rental supply.
+They are reasonable candidates for further research into premium rental supply. However, two essential business distinctions must guide executive decision-making:
+1. **Advertised Rent Does Not Prove Tenant Demand:** High asking prices reflect landlord supply expectations rather than active tenant demand or deal volume. A premium corridor with high rents can experience extended vacancy periods and low transaction liquidity.
+2. **High Gross Rent Does Not Mean High Net Profitability:** Profitability depends on net operational yields after accounting for property acquisition costs, finishing standards, maintenance overheads, tenant acquisition costs (CAC), and vacancy intervals. Lower-rent, high-turnover units in mature hubs can achieve higher annual returns on invested capital than luxury properties.
 
-However, the current dataset does not establish conversion rates, tenant demand, customer acquisition costs, occupancy, or revenue potential. These indicators should be investigated before prioritizing investment.
+Therefore, conversion rates, tenant demand, customer acquisition costs, occupancy, and actual lease agreements must be verified before prioritizing capital allocation.
 
 ### Recommendation 3 — Explore Affordable Districts as a Separate Segment
 
@@ -663,7 +671,7 @@ The current exploratory data analysis is a market-description foundation, not a 
 
 ## 11. Limitations
 
-- **Semi-Synthetic Benchmark Data:** The dataset is an engineered benchmark simulating rental listing distributions and portal scraping noise; it does not represent verified physical transactions or macroeconomic evidence of Egyptian property inflation.
+- **Semi-Synthetic Benchmark Data:** The dataset is an engineered benchmark simulating rental listing distributions and portal listing noise; it does not represent verified physical transactions or macroeconomic evidence of Egyptian property inflation.
 - **Advertised Asking Prices vs. Closed Contracts:** Advertised prices reflect simulated landlord asking rents rather than negotiated, executed lease contracts or verified tenant payments.
 - Missing dates and other fields reduce the sample available for specific analyses.
 - District sample sizes vary and affect estimate stability.

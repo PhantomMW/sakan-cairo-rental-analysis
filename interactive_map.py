@@ -213,7 +213,7 @@ def main():
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
     # Filter valid coordinates in Greater Cairo and realistic rents
-    # Exclude scraper anomalies (<= 500 EGP and >= 500,000 EGP)
+    # Exclude simulated portal anomalies (<= 500 EGP and >= 500,000 EGP)
     valid_mask = (
         df["latitude"].between(29.4, 30.7)
         & df["longitude"].between(30.5, 32.2)
