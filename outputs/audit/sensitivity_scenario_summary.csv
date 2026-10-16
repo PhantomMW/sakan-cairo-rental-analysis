@@ -1,0 +1,7 @@
+scenario,listing_count,district_count,overall_median_rent,overall_mean_rent,overall_median_price_per_sqm,overall_mean_price_per_sqm
+base_valid_positive,1851,26,22000.00,28875.20,155.91,197.28
+exclude_rent_ge_100k,1841,26,22000.00,24085.83,155.56,157.39
+exclude_size_ge_500sqm,1841,26,22000.00,28922.05,156.25,198.34
+exclude_both_ge_100k_or_500sqm,1831,26,22000.00,24106.78,155.91,158.25
+exclude_suspicious_rent_codes,1842,26,22000.00,24130.30,155.58,157.53
+exclude_size_ge_1000sqm,1841,26,22000.00,28922.05,156.25,198.34

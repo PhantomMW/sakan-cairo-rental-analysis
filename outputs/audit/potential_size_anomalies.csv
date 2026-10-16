@@ -1,0 +1,46 @@
+listing_id,district,latitude,longitude,size_sqm,rooms,furnished,monthly_rent_egp,listing_date,audit_reason
+SKN00052,Nasr City,30.0511,31.3401,-107,2,not furnished,12500,2026-01-22,Non-positive property size
+SKN00177,Faisal,30.0036,31.1708,-182,4,Furnished,14500,2025-12-08,Non-positive property size
+SKN00223,Heliopolis,30.0972,31.3284,-186,4,Unfurnished,22000,2025-09-12,Non-positive property size
+SKN00305,Nasr City,30.0587,31.3323,15200,3,Fully Furnished,25500,2025-09-23,Above exploratory IQR upper bound
+SKN00307,Heliopolis,30.0908,31.3246,-183,3,no,25000,2025-09-30,Non-positive property size
+SKN00370,Madinaty,30.0884,31.6474,22300,4,Semi-Furnished,28500EGP,2026-02-02,Above exploratory IQR upper bound
+SKN01527,Mohandeseen,30.0475,31.1936,276,5,UNFURNISHED,41500,2026-01-02,Above exploratory IQR upper bound
+SKN00451,Heliopolis,30.0826,31.3189,14100,3,not furnished,21000,2026-04-13,Above exploratory IQR upper bound
+SKN00476,Sheikh Zayed,30.0527,31.0038,-192,3,Unfurnished,32000,2026-06-18,Non-positive property size
+SKN00493,Zamalek,30.0571,31.2107,-260,5,N,59500,2026-05-06,Non-positive property size
+SKN00535,6th of October,29.9654,30.9085,-246,5,Y,31500,2025-10-12,Non-positive property size
+SKN00554,New Cairo,,,-115,2,UNFURNISHED,23000,2025-12-21,Non-positive property size
+SKN00555,Maadi,29.9574,31.2633,-145,3,UNFURNISHED,24500,2025-12-12,Non-positive property size
+SKN00619,Rehab City,30.0694,31.4858,295,5,semi,38000,2025-11-23,Above exploratory IQR upper bound
+SKN00656,Haram,29.9988,31.162,-99,2,UNFURNISHED,6500,2026-03-18,Non-positive property size
+SKN00675,,30.0414,31.2468,-197,3,no,15500,2026-04-12,Non-positive property size
+SKN00676,Heliopolis,30.0907,31.3301,-145,3,UNFURNISHED,18000,2025-10-10,Non-positive property size
+SKN00690,Rehab City,30.0646,31.4855,7700,1,no,11500,2026-01-19,Above exploratory IQR upper bound
+SKN00707,Heliopolis,30.0994,31.3274,-104,2,Semi-Furnished,15000,2025-10-28,Non-positive property size
+SKN00790,Nasr City,30.0519,31.3274,16800,3,Semi-Furnished,22000,2026-07-26,Above exploratory IQR upper bound
+SKN00804,Sheikh Zayed,30.0514,30.9864,11400,2,Unfurnished,24500,2026-07-01,Above exploratory IQR upper bound
+SKN00834,New Cairo,30.0213,31.4774,-144,3,Unfurnished,29500,2026-04-02,Non-positive property size
+SKN00893,Manial,30.0237,31.2219,-139,2,Fully Furnished,20500,2026-08-03,Non-positive property size
+SKN00904,Zamalek,30.0672,31.2132,-230,4,Fully Furnished,100000,2026-06-10,Non-positive property size
+SKN00925,Mokattam,30.0203,31.3056,10200,2,Fully Furnished,12000,2025-11-05,Above exploratory IQR upper bound
+SKN01110,Giza Square,30.0136,31.2114,-225,4,not furnished,14000,2026-02-27,Non-positive property size
+SKN01123,Zamalek,30.0676,31.21,-136,3,Y,56000,2026-01-30,Non-positive property size
+SKN01176,Dokki,30.0305,31.2049,-184,3,UNFURNISHED,27500,2026-03-31,Non-positive property size
+SKN01188,Obour City,30.2258,31.4598,-228,5,Furnished,19500,2026-02-19,Non-positive property size
+SKN00493,Zamalek,30.0571,31.2107,-260,5,N,59500,2026-05-06,Non-positive property size
+SKN01268,Sheikh Zayed,30.0421,30.9967,-138,3,Furnished,32500,2026-04-03,Non-positive property size
+SKN01284,Maadi,29.959,31.2608,11200,2,not furnished,21500,2026-08-02,Above exploratory IQR upper bound
+SKN01345,Nasr City,30.0473,31.3311,19700,4,Semi-Furnished,23500,2025-10-04,Above exploratory IQR upper bound
+SKN01360,Sheikh Zayed,30.0319,30.9762,277,5,no,59000,2026-03-09,Above exploratory IQR upper bound
+SKN01472,Nasr City,30.0569,31.3292,13000,3,Fully Furnished,22500,2026-04-03,Above exploratory IQR upper bound
+SKN01476,Sheikh Zayed,30.0379,30.9732,-204,4,not furnished,31000,2025-10-02,Non-positive property size
+SKN01490,Imbaba,30.0701,31.2073,-194,4,N,10500,2026-06-25,Non-positive property size
+SKN01495,6th of October,29.9528,30.9363,-181,3,Fully Furnished,31000,2026-07-12,Non-positive property size
+SKN01527,Mohandeseen,30.0475,31.1936,276,5,UNFURNISHED,41500,2026-01-02,Above exploratory IQR upper bound
+SKN01535,6th of October,29.9691,30.9414,-123,2,not furnished,13500,2026-04-24,Non-positive property size
+SKN01621,Mohandeseen,30.0597,31.1941,-114,2,not furnished,19500,2025-09-24,Non-positive property size
+SKN01680,6th of October,29.9598,30.9318,17000,3,Unfurnished,18500,2026-01-09,Above exploratory IQR upper bound
+SKN01681,Dokki,30.0454,31.2064,-146,2,not furnished,23500,2026-01-02,Non-positive property size
+SKN01728,Shorouk City,30.149,31.6183,-116,2,Furnished,18000,2026-06-27,Non-positive property size
+SKN01881,6th of October,29.9611,30.912,-107,2,not furnished,11500 EGP,2025-09-29,Non-positive property size

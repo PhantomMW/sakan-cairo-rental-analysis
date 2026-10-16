@@ -1,0 +1,157 @@
+scenario,district,listing_count,median_rent,mean_rent,median_price_per_sqm,mean_price_per_sqm,median_size_sqm
+base_valid_positive,6th of October,156,18000.00,17996.80,116.64,119.07,152.50
+base_valid_positive,Agouza,51,23500.00,43401.94,148.15,500.97,158.00
+base_valid_positive,Badr City,14,7000.00,7107.21,53.49,50.05,139.50
+base_valid_positive,Dokki,74,25750.00,26939.19,168.48,171.37,159.50
+base_valid_positive,Downtown Cairo,51,16000.00,15862.75,103.45,104.84,158.00
+base_valid_positive,El Marg,15,7000.00,7233.40,45.45,45.96,156.00
+base_valid_positive,Faisal,44,9500.00,32215.89,63.68,181.73,148.50
+base_valid_positive,Giza Square,30,12000.00,11916.67,79.29,80.17,148.50
+base_valid_positive,Haram,44,12000.00,11465.93,80.40,81.16,144.50
+base_valid_positive,Heliopolis,129,24500.00,32325.59,162.44,269.09,144.00
+base_valid_positive,Helwan,23,7000.00,7152.17,48.61,49.76,149.00
+base_valid_positive,Imbaba,17,9000.00,9205.88,51.95,54.32,181.00
+base_valid_positive,Maadi,153,34500.00,40035.96,217.95,255.77,159.00
+base_valid_positive,Madinaty,64,23500.00,23960.94,152.67,155.95,149.00
+base_valid_positive,Manial,36,18000.00,17666.67,128.39,131.07,137.50
+base_valid_positive,Mohandeseen,110,26000.00,44618.18,176.36,284.72,152.00
+base_valid_positive,Mokattam,51,20500.00,20754.90,117.45,122.57,165.00
+base_valid_positive,Nasr City,176,18500.00,31187.49,132.46,200.49,146.50
+base_valid_positive,New Cairo,194,35750.00,40742.26,221.23,270.22,156.00
+base_valid_positive,Obour City,35,11000.00,11342.86,77.96,79.37,141.00
+base_valid_positive,Rehab City,69,26000.00,26579.71,165.70,165.56,162.00
+base_valid_positive,Sayeda Zeinab,16,10750.00,11500.00,74.81,74.73,154.00
+base_valid_positive,Sheikh Zayed,150,30000.00,31106.67,206.49,206.42,151.00
+base_valid_positive,Shorouk City,33,14500.00,15015.15,95.24,105.86,140.00
+base_valid_positive,Shoubra,52,8500.00,9192.31,57.50,58.88,150.00
+base_valid_positive,Zamalek,64,44250.00,45890.62,283.00,294.44,153.00
+exclude_rent_ge_100k,6th of October,156,18000.00,17996.80,116.64,119.07,152.50
+exclude_rent_ge_100k,Agouza,50,23500.00,24270.00,147.69,153.85,159.50
+exclude_rent_ge_100k,Badr City,14,7000.00,7107.21,53.49,50.05,139.50
+exclude_rent_ge_100k,Dokki,74,25750.00,26939.19,168.48,171.37,159.50
+exclude_rent_ge_100k,Downtown Cairo,51,16000.00,15862.75,103.45,104.84,158.00
+exclude_rent_ge_100k,El Marg,15,7000.00,7233.40,45.45,45.96,156.00
+exclude_rent_ge_100k,Faisal,43,9500.00,9709.30,61.97,65.46,148.00
+exclude_rent_ge_100k,Giza Square,30,12000.00,11916.67,79.29,80.17,148.50
+exclude_rent_ge_100k,Haram,44,12000.00,11465.93,80.40,81.16,144.50
+exclude_rent_ge_100k,Heliopolis,128,24500.00,24765.63,162.14,167.03,144.50
+exclude_rent_ge_100k,Helwan,23,7000.00,7152.17,48.61,49.76,149.00
+exclude_rent_ge_100k,Imbaba,17,9000.00,9205.88,51.95,54.32,181.00
+exclude_rent_ge_100k,Maadi,152,34500.00,33720.41,217.61,216.84,159.00
+exclude_rent_ge_100k,Madinaty,64,23500.00,23960.94,152.67,155.95,149.00
+exclude_rent_ge_100k,Manial,36,18000.00,17666.67,128.39,131.07,137.50
+exclude_rent_ge_100k,Mohandeseen,108,25750.00,26925.93,174.89,179.66,151.50
+exclude_rent_ge_100k,Mokattam,51,20500.00,20754.90,117.45,122.57,165.00
+exclude_rent_ge_100k,Nasr City,174,18500.00,20051.72,132.15,133.85,146.00
+exclude_rent_ge_100k,New Cairo,193,35500.00,35772.02,220.24,227.34,156.00
+exclude_rent_ge_100k,Obour City,35,11000.00,11342.86,77.96,79.37,141.00
+exclude_rent_ge_100k,Rehab City,69,26000.00,26579.71,165.70,165.56,162.00
+exclude_rent_ge_100k,Sayeda Zeinab,16,10750.00,11500.00,74.81,74.73,154.00
+exclude_rent_ge_100k,Sheikh Zayed,150,30000.00,31106.67,206.49,206.42,151.00
+exclude_rent_ge_100k,Shorouk City,33,14500.00,15015.15,95.24,105.86,140.00
+exclude_rent_ge_100k,Shoubra,52,8500.00,9192.31,57.50,58.88,150.00
+exclude_rent_ge_100k,Zamalek,63,44000.00,44936.51,282.98,292.76,152.00
+exclude_size_ge_500sqm,6th of October,155,18000.00,17993.55,117.09,119.83,152.00
+exclude_size_ge_500sqm,Agouza,51,23500.00,43401.94,148.15,500.97,158.00
+exclude_size_ge_500sqm,Badr City,14,7000.00,7107.21,53.49,50.05,139.50
+exclude_size_ge_500sqm,Dokki,74,25750.00,26939.19,168.48,171.37,159.50
+exclude_size_ge_500sqm,Downtown Cairo,51,16000.00,15862.75,103.45,104.84,158.00
+exclude_size_ge_500sqm,El Marg,15,7000.00,7233.40,45.45,45.96,156.00
+exclude_size_ge_500sqm,Faisal,44,9500.00,32215.89,63.68,181.73,148.50
+exclude_size_ge_500sqm,Giza Square,30,12000.00,11916.67,79.29,80.17,148.50
+exclude_size_ge_500sqm,Haram,44,12000.00,11465.93,80.40,81.16,144.50
+exclude_size_ge_500sqm,Heliopolis,128,24500.00,32414.07,163.04,271.18,143.50
+exclude_size_ge_500sqm,Helwan,23,7000.00,7152.17,48.61,49.76,149.00
+exclude_size_ge_500sqm,Imbaba,17,9000.00,9205.88,51.95,54.32,181.00
+exclude_size_ge_500sqm,Maadi,152,34500.00,40157.91,218.04,257.44,159.00
+exclude_size_ge_500sqm,Madinaty,64,23500.00,23960.94,152.67,155.95,149.00
+exclude_size_ge_500sqm,Manial,36,18000.00,17666.67,128.39,131.07,137.50
+exclude_size_ge_500sqm,Mohandeseen,110,26000.00,44618.18,176.36,284.72,152.00
+exclude_size_ge_500sqm,Mokattam,50,20750.00,20930.00,117.73,125.00,163.50
+exclude_size_ge_500sqm,Nasr City,172,18500.00,31369.17,133.09,205.12,146.00
+exclude_size_ge_500sqm,New Cairo,194,35750.00,40742.26,221.23,270.22,156.00
+exclude_size_ge_500sqm,Obour City,35,11000.00,11342.86,77.96,79.37,141.00
+exclude_size_ge_500sqm,Rehab City,68,26250.00,26801.47,166.71,167.97,161.00
+exclude_size_ge_500sqm,Sayeda Zeinab,16,10750.00,11500.00,74.81,74.73,154.00
+exclude_size_ge_500sqm,Sheikh Zayed,149,30000.00,31151.01,206.52,207.79,151.00
+exclude_size_ge_500sqm,Shorouk City,33,14500.00,15015.15,95.24,105.86,140.00
+exclude_size_ge_500sqm,Shoubra,52,8500.00,9192.31,57.50,58.88,150.00
+exclude_size_ge_500sqm,Zamalek,64,44250.00,45890.62,283.00,294.44,153.00
+exclude_both_ge_100k_or_500sqm,6th of October,155,18000.00,17993.55,117.09,119.83,152.00
+exclude_both_ge_100k_or_500sqm,Agouza,50,23500.00,24270.00,147.69,153.85,159.50
+exclude_both_ge_100k_or_500sqm,Badr City,14,7000.00,7107.21,53.49,50.05,139.50
+exclude_both_ge_100k_or_500sqm,Dokki,74,25750.00,26939.19,168.48,171.37,159.50
+exclude_both_ge_100k_or_500sqm,Downtown Cairo,51,16000.00,15862.75,103.45,104.84,158.00
+exclude_both_ge_100k_or_500sqm,El Marg,15,7000.00,7233.40,45.45,45.96,156.00
+exclude_both_ge_100k_or_500sqm,Faisal,43,9500.00,9709.30,61.97,65.46,148.00
+exclude_both_ge_100k_or_500sqm,Giza Square,30,12000.00,11916.67,79.29,80.17,148.50
+exclude_both_ge_100k_or_500sqm,Haram,44,12000.00,11465.93,80.40,81.16,144.50
+exclude_both_ge_100k_or_500sqm,Heliopolis,127,24500.00,24795.28,162.44,168.33,144.00
+exclude_both_ge_100k_or_500sqm,Helwan,23,7000.00,7152.17,48.61,49.76,149.00
+exclude_both_ge_100k_or_500sqm,Imbaba,17,9000.00,9205.88,51.95,54.32,181.00
+exclude_both_ge_100k_or_500sqm,Maadi,151,34500.00,33801.34,217.95,218.26,159.00
+exclude_both_ge_100k_or_500sqm,Madinaty,64,23500.00,23960.94,152.67,155.95,149.00
+exclude_both_ge_100k_or_500sqm,Manial,36,18000.00,17666.67,128.39,131.07,137.50
+exclude_both_ge_100k_or_500sqm,Mohandeseen,108,25750.00,26925.93,174.89,179.66,151.50
+exclude_both_ge_100k_or_500sqm,Mokattam,50,20750.00,20930.00,117.73,125.00,163.50
+exclude_both_ge_100k_or_500sqm,Nasr City,170,18500.00,19973.53,132.80,136.96,146.00
+exclude_both_ge_100k_or_500sqm,New Cairo,193,35500.00,35772.02,220.24,227.34,156.00
+exclude_both_ge_100k_or_500sqm,Obour City,35,11000.00,11342.86,77.96,79.37,141.00
+exclude_both_ge_100k_or_500sqm,Rehab City,68,26250.00,26801.47,166.71,167.97,161.00
+exclude_both_ge_100k_or_500sqm,Sayeda Zeinab,16,10750.00,11500.00,74.81,74.73,154.00
+exclude_both_ge_100k_or_500sqm,Sheikh Zayed,149,30000.00,31151.01,206.52,207.79,151.00
+exclude_both_ge_100k_or_500sqm,Shorouk City,33,14500.00,15015.15,95.24,105.86,140.00
+exclude_both_ge_100k_or_500sqm,Shoubra,52,8500.00,9192.31,57.50,58.88,150.00
+exclude_both_ge_100k_or_500sqm,Zamalek,63,44000.00,44936.51,282.98,292.76,152.00
+exclude_suspicious_rent_codes,6th of October,156,18000.00,17996.80,116.64,119.07,152.50
+exclude_suspicious_rent_codes,Agouza,50,23500.00,24270.00,147.69,153.85,159.50
+exclude_suspicious_rent_codes,Badr City,14,7000.00,7107.21,53.49,50.05,139.50
+exclude_suspicious_rent_codes,Dokki,74,25750.00,26939.19,168.48,171.37,159.50
+exclude_suspicious_rent_codes,Downtown Cairo,51,16000.00,15862.75,103.45,104.84,158.00
+exclude_suspicious_rent_codes,El Marg,15,7000.00,7233.40,45.45,45.96,156.00
+exclude_suspicious_rent_codes,Faisal,43,9500.00,9709.30,61.97,65.46,148.00
+exclude_suspicious_rent_codes,Giza Square,30,12000.00,11916.67,79.29,80.17,148.50
+exclude_suspicious_rent_codes,Haram,44,12000.00,11465.93,80.40,81.16,144.50
+exclude_suspicious_rent_codes,Heliopolis,128,24500.00,24765.63,162.14,167.03,144.50
+exclude_suspicious_rent_codes,Helwan,23,7000.00,7152.17,48.61,49.76,149.00
+exclude_suspicious_rent_codes,Imbaba,17,9000.00,9205.88,51.95,54.32,181.00
+exclude_suspicious_rent_codes,Maadi,152,34500.00,33720.41,217.61,216.84,159.00
+exclude_suspicious_rent_codes,Madinaty,64,23500.00,23960.94,152.67,155.95,149.00
+exclude_suspicious_rent_codes,Manial,36,18000.00,17666.67,128.39,131.07,137.50
+exclude_suspicious_rent_codes,Mohandeseen,108,25750.00,26925.93,174.89,179.66,151.50
+exclude_suspicious_rent_codes,Mokattam,51,20500.00,20754.90,117.45,122.57,165.00
+exclude_suspicious_rent_codes,Nasr City,174,18500.00,20051.72,132.15,133.85,146.00
+exclude_suspicious_rent_codes,New Cairo,193,35500.00,35772.02,220.24,227.34,156.00
+exclude_suspicious_rent_codes,Obour City,35,11000.00,11342.86,77.96,79.37,141.00
+exclude_suspicious_rent_codes,Rehab City,69,26000.00,26579.71,165.70,165.56,162.00
+exclude_suspicious_rent_codes,Sayeda Zeinab,16,10750.00,11500.00,74.81,74.73,154.00
+exclude_suspicious_rent_codes,Sheikh Zayed,150,30000.00,31106.67,206.49,206.42,151.00
+exclude_suspicious_rent_codes,Shorouk City,33,14500.00,15015.15,95.24,105.86,140.00
+exclude_suspicious_rent_codes,Shoubra,52,8500.00,9192.31,57.50,58.88,150.00
+exclude_suspicious_rent_codes,Zamalek,64,44250.00,45890.62,283.00,294.44,153.00
+exclude_size_ge_1000sqm,6th of October,155,18000.00,17993.55,117.09,119.83,152.00
+exclude_size_ge_1000sqm,Agouza,51,23500.00,43401.94,148.15,500.97,158.00
+exclude_size_ge_1000sqm,Badr City,14,7000.00,7107.21,53.49,50.05,139.50
+exclude_size_ge_1000sqm,Dokki,74,25750.00,26939.19,168.48,171.37,159.50
+exclude_size_ge_1000sqm,Downtown Cairo,51,16000.00,15862.75,103.45,104.84,158.00
+exclude_size_ge_1000sqm,El Marg,15,7000.00,7233.40,45.45,45.96,156.00
+exclude_size_ge_1000sqm,Faisal,44,9500.00,32215.89,63.68,181.73,148.50
+exclude_size_ge_1000sqm,Giza Square,30,12000.00,11916.67,79.29,80.17,148.50
+exclude_size_ge_1000sqm,Haram,44,12000.00,11465.93,80.40,81.16,144.50
+exclude_size_ge_1000sqm,Heliopolis,128,24500.00,32414.07,163.04,271.18,143.50
+exclude_size_ge_1000sqm,Helwan,23,7000.00,7152.17,48.61,49.76,149.00
+exclude_size_ge_1000sqm,Imbaba,17,9000.00,9205.88,51.95,54.32,181.00
+exclude_size_ge_1000sqm,Maadi,152,34500.00,40157.91,218.04,257.44,159.00
+exclude_size_ge_1000sqm,Madinaty,64,23500.00,23960.94,152.67,155.95,149.00
+exclude_size_ge_1000sqm,Manial,36,18000.00,17666.67,128.39,131.07,137.50
+exclude_size_ge_1000sqm,Mohandeseen,110,26000.00,44618.18,176.36,284.72,152.00
+exclude_size_ge_1000sqm,Mokattam,50,20750.00,20930.00,117.73,125.00,163.50
+exclude_size_ge_1000sqm,Nasr City,172,18500.00,31369.17,133.09,205.12,146.00
+exclude_size_ge_1000sqm,New Cairo,194,35750.00,40742.26,221.23,270.22,156.00
+exclude_size_ge_1000sqm,Obour City,35,11000.00,11342.86,77.96,79.37,141.00
+exclude_size_ge_1000sqm,Rehab City,68,26250.00,26801.47,166.71,167.97,161.00
+exclude_size_ge_1000sqm,Sayeda Zeinab,16,10750.00,11500.00,74.81,74.73,154.00
+exclude_size_ge_1000sqm,Sheikh Zayed,149,30000.00,31151.01,206.52,207.79,151.00
+exclude_size_ge_1000sqm,Shorouk City,33,14500.00,15015.15,95.24,105.86,140.00
+exclude_size_ge_1000sqm,Shoubra,52,8500.00,9192.31,57.50,58.88,150.00
+exclude_size_ge_1000sqm,Zamalek,64,44250.00,45890.62,283.00,294.44,153.00

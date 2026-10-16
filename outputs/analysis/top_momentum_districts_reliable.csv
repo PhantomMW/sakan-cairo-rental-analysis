@@ -1,0 +1,9 @@
+district,total_listings,months_active,annual_volume_tier,median_sep_2025_egp,count_sep_2025,median_aug_2026_egp,count_aug_2026,min_endpoint_count,endpoint_sample_adequacy,raw_endpoint_pct_change,avg_monthly_pct_change,smoothed_quarterly_pct_change,composite_reliability
+Rehab City,68,12,Medium Volume (50-99 listings),18000.00,7,43000.00,5,5,Moderate (min count 5-7),138.89,10.38,46.81,Tier 2: Moderate Reliability (Medium Volume & Moderate Monthly)
+Zamalek,64,12,Medium Volume (50-99 listings),44000.00,7,63500.00,6,6,Moderate (min count 5-7),44.32,9.70,35.96,Tier 2: Moderate Reliability (Medium Volume & Moderate Monthly)
+Heliopolis,128,12,Large Volume (>=100 listings),19000.00,14,23750.00,8,8,Robust (min count >= 8),25.00,3.49,25.00,Tier 1: High Reliability (Large Volume & Robust Monthly)
+New Cairo,193,12,Large Volume (>=100 listings),32500.00,12,38500.00,10,10,Robust (min count >= 8),18.46,2.32,13.85,Tier 1: High Reliability (Large Volume & Robust Monthly)
+6th of October,154,12,Large Volume (>=100 listings),16000.00,8,18250.00,12,8,Robust (min count >= 8),14.06,3.31,22.81,Tier 1: High Reliability (Large Volume & Robust Monthly)
+Maadi,151,12,Large Volume (>=100 listings),36500.00,11,38500.00,19,11,Robust (min count >= 8),5.48,0.82,8.15,Tier 1: High Reliability (Large Volume & Robust Monthly)
+Sheikh Zayed,149,12,Large Volume (>=100 listings),28250.00,12,26250.00,8,8,Robust (min count >= 8),-7.08,0.18,10.34,Tier 1: High Reliability (Large Volume & Robust Monthly)
+Nasr City,174,12,Large Volume (>=100 listings),20750.00,14,16250.00,20,14,Robust (min count >= 8),-21.69,-1.15,-10.26,Tier 1: High Reliability (Large Volume & Robust Monthly)

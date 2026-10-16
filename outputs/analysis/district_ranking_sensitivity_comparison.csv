@@ -1,0 +1,27 @@
+district,base_listing_count,base_median_monthly_rent_egp,base_median_price_per_sqm,base_rent_rank,base_price_per_sqm_rank,sensitivity_listing_count,sensitivity_median_monthly_rent_egp,sensitivity_median_price_per_sqm,sensitivity_rent_rank,sensitivity_price_per_sqm_rank,rent_rank_change,price_per_sqm_rank_change,comparison_status,rent_rank_stability,price_per_sqm_rank_stability
+Badr City,14,7000.00,53.49,1,4,14,7000.00,53.49,1,4,0,0,Ranked in both scenarios,Stable,Stable
+El Marg,15,7000.00,45.45,1,1,15,7000.00,45.45,1,1,0,0,Ranked in both scenarios,Stable,Stable
+Helwan,23,7000.00,48.61,1,2,23,7000.00,48.61,1,2,0,0,Ranked in both scenarios,Stable,Stable
+Shoubra,52,8500.00,57.50,4,5,52,8500.00,57.50,4,5,0,0,Ranked in both scenarios,Stable,Stable
+Imbaba,17,9000.00,51.95,5,3,17,9000.00,51.95,5,3,0,0,Ranked in both scenarios,Stable,Stable
+Faisal,44,9500.00,63.68,6,6,43,9500.00,61.97,6,6,0,0,Ranked in both scenarios,Stable,Stable
+Sayeda Zeinab,16,10750.00,74.81,7,7,16,10750.00,74.81,7,7,0,0,Ranked in both scenarios,Stable,Stable
+Obour City,35,11000.00,77.96,8,8,35,11000.00,77.96,8,8,0,0,Ranked in both scenarios,Stable,Stable
+Giza Square,30,12000.00,79.29,9,9,30,12000.00,79.29,9,9,0,0,Ranked in both scenarios,Stable,Stable
+Haram,44,12000.00,80.40,9,10,44,12000.00,80.40,9,10,0,0,Ranked in both scenarios,Stable,Stable
+Shorouk City,33,14500.00,95.24,11,11,33,14500.00,95.24,11,11,0,0,Ranked in both scenarios,Stable,Stable
+Downtown Cairo,51,16000.00,103.45,12,12,51,16000.00,103.45,12,12,0,0,Ranked in both scenarios,Stable,Stable
+6th of October,156,18000.00,116.64,13,13,155,18000.00,117.09,13,13,0,0,Ranked in both scenarios,Stable,Stable
+Manial,36,18000.00,128.39,13,15,36,18000.00,128.39,13,15,0,0,Ranked in both scenarios,Stable,Stable
+Nasr City,176,18500.00,132.46,15,16,170,18500.00,132.80,15,16,0,0,Ranked in both scenarios,Stable,Stable
+Mokattam,51,20500.00,117.45,16,14,50,20750.00,117.73,16,14,0,0,Ranked in both scenarios,Stable,Stable
+Agouza,51,23500.00,148.15,17,17,50,23500.00,147.69,17,17,0,0,Ranked in both scenarios,Stable,Stable
+Madinaty,64,23500.00,152.67,17,18,64,23500.00,152.67,17,18,0,0,Ranked in both scenarios,Stable,Stable
+Heliopolis,129,24500.00,162.44,19,19,127,24500.00,162.44,19,19,0,0,Ranked in both scenarios,Stable,Stable
+Dokki,74,25750.00,168.48,20,21,74,25750.00,168.48,20,21,0,0,Ranked in both scenarios,Stable,Stable
+Mohandeseen,110,26000.00,176.36,21,22,108,25750.00,174.89,20,22,-1,0,Ranked in both scenarios,Minor change,Stable
+Rehab City,69,26000.00,165.70,21,20,68,26250.00,166.71,22,20,1,0,Ranked in both scenarios,Minor change,Stable
+Sheikh Zayed,150,30000.00,206.49,23,23,149,30000.00,206.52,23,23,0,0,Ranked in both scenarios,Stable,Stable
+Maadi,153,34500.00,217.95,24,24,151,34500.00,217.95,24,24,0,0,Ranked in both scenarios,Stable,Stable
+New Cairo,194,35750.00,221.23,25,25,193,35500.00,220.24,25,25,0,0,Ranked in both scenarios,Stable,Stable
+Zamalek,64,44250.00,283.00,26,26,63,44000.00,282.98,26,26,0,0,Ranked in both scenarios,Stable,Stable

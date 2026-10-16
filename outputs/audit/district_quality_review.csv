@@ -1,0 +1,76 @@
+listing_id,district,latitude,longitude,monthly_rent_egp,size_sqm,price_per_sqm,rooms,furnished,listing_date,flag_rent_nonpositive,flag_size_nonpositive,flag_rent_ge_100k,flag_size_ge_500sqm,flag_suspicious_rent_code,flag_size_ge_1000sqm,flag_monthly_rent_egp_iqr,flag_size_sqm_iqr,flag_price_per_sqm_iqr
+SKN00004,Maadi,29.9598,31.2492,1000000.0,162.0,6172.83950617284,3,Unfurnished,2025-09-12,False,False,True,False,True,False,True,False,True
+SKN00008,Zamalek,,,59000.0,146.0,404.1095890410959,3,Fully-Furnished,2025-10-05,False,False,False,False,False,False,True,False,True
+SKN00038,Zamalek,30.0725,31.227,66000.0,200.0,330.0,3,Furnished,2026-04-28,False,False,False,False,False,False,True,False,False
+SKN00048,Zamalek,30.0633,31.2116,72000.0,226.0,318.5840707964602,4,Furnished,2025-09-04,False,False,False,False,False,False,True,False,False
+SKN00087,Sheikh Zayed,30.0547,30.9664,60000.0,209.0,287.08133971291863,4,Furnished,2026-02-14,False,False,False,False,False,False,True,False,False
+SKN00090,Zamalek,30.0591,31.2203,64000.0,171.0,374.2690058479532,3,Furnished,2025-09-23,False,False,False,False,False,False,True,False,True
+SKN00093,New Cairo,30.0168,31.4877,49500.0,144.0,343.75,3,Furnished,2026-07-08,False,False,False,False,False,False,False,False,True
+SKN00099,Downtown Cairo,30.0521,31.2414,23500.0,275.0,85.45454545454545,5,Unfurnished,2025-09-08,False,False,False,False,False,False,False,True,False
+SKN00135,Sheikh Zayed,30.0562,30.9724,65000.0,209.0,311.0047846889952,4,Furnished,2026-05-24,False,False,False,False,False,False,True,False,False
+SKN00180,Zamalek,30.0703,31.223,51000.0,126.0,404.76190476190476,2,Furnished,2025-11-09,False,False,False,False,False,False,False,False,True
+SKN00188,New Cairo,30.0136,31.4738,60000.0,204.0,294.11764705882354,4,Furnished,2026-05-16,False,False,False,False,False,False,True,False,False
+SKN00206,Agouza,30.0595,31.2,999999.0,56.0,17857.125,1,Semi-Furnished,2025-12-14,False,False,True,False,True,False,True,False,True
+SKN00229,New Cairo,30.0,31.4742,58500.0,186.0,314.51612903225805,3,Fully-Furnished,,False,False,False,False,False,False,True,False,False
+SKN00230,New Cairo,30.0137,31.5011,60500.0,221.0,273.7556561085973,4,Furnished,2026-05-28,False,False,False,False,False,False,True,False,False
+SKN00237,Zamalek,30.0613,31.2294,29500.0,83.0,355.421686746988,1,Furnished,2025-12-22,False,False,False,False,False,False,False,False,True
+SKN00241,Zamalek,30.0627,31.2292,60500.0,232.0,260.7758620689655,4,Unfurnished,2026-04-29,False,False,False,False,False,False,True,False,False
+SKN00296,Zamalek,30.056,31.2264,59500.0,171.0,347.953216374269,3,Furnished,2025-11-12,False,False,False,False,False,False,True,False,True
+SKN00302,Heliopolis,30.0889,31.3151,1000000.0,75.0,13333.333333333334,2,Unfurnished,2026-04-26,False,False,True,False,True,False,True,False,True
+SKN00305,Nasr City,30.0587,31.3323,25500.0,15200.0,1.6776315789473684,3,Fully-Furnished,2025-09-23,False,False,False,True,False,True,False,True,False
+SKN00356,Maadi,29.9681,31.2607,62500.0,186.0,336.02150537634407,4,Furnished,2026-08-12,False,False,False,False,False,False,True,False,False
+SKN00384,Zamalek,30.071,31.2134,67000.0,164.0,408.5365853658537,3,Furnished,2026-08-10,False,False,False,False,False,False,True,False,True
+SKN00397,New Cairo,30.0064,31.5047,61000.0,248.0,245.96774193548387,5,Unfurnished,2026-05-15,False,False,False,False,False,False,True,False,False
+SKN00406,Zamalek,30.0682,31.2226,63000.0,225.0,280.0,4,Unfurnished,2026-08-22,False,False,False,False,False,False,True,False,False
+SKN01527,Mohandeseen,30.0475,31.1936,41500.0,276.0,150.36231884057972,5,Unfurnished,2026-01-02,False,False,False,False,False,False,False,True,False
+SKN00451,Heliopolis,30.0826,31.3189,21000.0,14100.0,1.4893617021276595,3,Unfurnished,2026-04-13,False,False,False,True,False,True,False,True,False
+SKN00576,Zamalek,30.0539,31.2199,91500.0,270.0,338.8888888888889,5,Fully-Furnished,2026-08-19,False,False,False,False,False,False,True,False,True
+SKN00588,Zamalek,30.0666,31.2106,59500.0,152.0,391.44736842105266,2,Fully-Furnished,2025-09-10,False,False,False,False,False,False,True,False,True
+SKN00619,Rehab City,30.0694,31.4858,38000.0,295.0,128.8135593220339,5,Semi-Furnished,2025-11-23,False,False,False,False,False,False,False,True,False
+SKN00663,Zamalek,30.0609,31.2203,72500.0,178.0,407.30337078651684,3,Fully-Furnished,2026-07-11,False,False,False,False,False,False,True,False,True
+SKN00690,Rehab City,30.0646,31.4855,11500.0,7700.0,1.4935064935064934,1,Unfurnished,2026-01-19,False,False,False,True,False,True,False,True,False
+SKN00755,New Cairo,30.012,31.4804,58500.0,260.0,225.0,5,Unfurnished,2026-03-15,False,False,False,False,False,False,True,False,False
+SKN00764,Zamalek,30.0688,31.2141,62500.0,170.0,367.6470588235294,3,Furnished,2026-05-05,False,False,False,False,False,False,True,False,True
+SKN00790,Nasr City,30.0519,31.3274,22000.0,16800.0,1.3095238095238095,3,Semi-Furnished,2026-07-26,False,False,False,True,False,True,False,True,False
+SKN00796,Sheikh Zayed,30.0373,30.9796,61500.0,255.0,241.1764705882353,5,Semi-Furnished,2026-04-08,False,False,False,False,False,False,True,False,False
+SKN00804,Sheikh Zayed,30.0514,30.9864,24500.0,11400.0,2.1491228070175437,2,Unfurnished,2026-07-01,False,False,False,True,False,True,False,True,False
+SKN00925,Mokattam,30.0203,31.3056,12000.0,10200.0,1.1764705882352942,2,Fully-Furnished,2025-11-05,False,False,False,True,False,True,False,True,False
+SKN00948,New Cairo,29.9959,31.4994,52000.0,153.0,339.8692810457516,3,Furnished,2026-08-26,False,False,False,False,False,False,False,False,True
+SKN00959,Mohandeseen,30.0648,31.1979,1000000.0,179.0,5586.592178770949,3,Unfurnished,2026-01-11,False,False,True,False,True,False,True,False,True
+SKN00995,New Cairo,30.0133,31.4732,65000.0,233.0,278.9699570815451,5,Furnished,2026-05-07,False,False,False,False,False,False,True,False,False
+SKN01007,New Cairo,30.0026,31.4718,49000.0,142.0,345.07042253521126,2,Furnished,2026-07-17,False,False,False,False,False,False,False,False,True
+SKN01065,Sheikh Zayed,30.0236,30.9743,60500.0,261.0,231.8007662835249,5,Furnished,2025-10-04,False,False,False,False,False,False,True,False,False
+SKN01104,New Cairo,29.9999,31.483,46500.0,136.0,341.9117647058824,3,Fully-Furnished,2026-07-23,False,False,False,False,False,False,False,False,True
+SKN01129,Sheikh Zayed,30.04,30.9804,60000.0,246.0,243.90243902439025,5,Fully-Furnished,2026-03-14,False,False,False,False,False,False,True,False,False
+SKN01190,Sheikh Zayed,30.0348,30.9832,64000.0,246.0,260.1626016260163,5,Semi-Furnished,2026-04-09,False,False,False,False,False,False,True,False,False
+SKN01237,Maadi,29.9517,31.2617,71000.0,244.0,290.9836065573771,5,Furnished,2026-03-03,False,False,False,False,False,False,True,False,False
+SKN01263,Zamalek,30.0658,31.2291,64500.0,202.0,319.3069306930693,4,Semi-Furnished,2025-12-05,False,False,False,False,False,False,True,False,False
+SKN01284,Maadi,29.959,31.2608,21500.0,11200.0,1.9196428571428572,2,Unfurnished,2026-08-02,False,False,False,True,False,True,False,True,False
+SKN01307,Nasr City,30.0477,31.3297,999999.0,174.0,5747.120689655172,3,Unfurnished,2026-06-15,False,False,True,False,True,False,True,False,True
+SKN01315,Zamalek,30.0713,31.2123,34500.0,90.0,383.3333333333333,2,Fully-Furnished,2025-10-24,False,False,False,False,False,False,False,False,True
+SKN01333,Zamalek,30.069,31.2137,59500.0,209.0,284.688995215311,4,Semi-Furnished,2025-10-17,False,False,False,False,False,False,True,False,False
+SKN01338,Faisal,30.0085,31.1756,999999.0,193.0,5181.341968911917,4,Unfurnished,2026-03-22,False,False,True,False,True,False,True,False,True
+SKN01345,Nasr City,30.0473,31.3311,23500.0,19700.0,1.1928934010152283,4,Semi-Furnished,2025-10-04,False,False,False,True,False,True,False,True,False
+SKN01360,Sheikh Zayed,30.0319,30.9762,59000.0,277.0,212.99638989169677,5,Unfurnished,2026-03-09,False,False,False,False,False,False,True,True,False
+SKN01377,Zamalek,30.0548,31.227,106000.0,265.0,400.0,5,Furnished,2025-12-31,False,False,True,False,False,False,True,False,True
+SKN01441,Zamalek,30.064,31.2224,66500.0,204.0,325.98039215686276,3,Furnished,2025-12-06,False,False,False,False,False,False,True,False,False
+SKN01449,New Cairo,30.021,31.488,75500.0,248.0,304.43548387096774,5,Furnished,2026-02-28,False,False,False,False,False,False,True,False,False
+SKN01468,Zamalek,30.0647,31.2293,60500.0,239.0,253.13807531380752,5,Unfurnished,2026-06-18,False,False,False,False,False,False,True,False,False
+SKN01471,New Cairo,29.9898,31.475,65000.0,195.0,333.3333333333333,4,Furnished,2026-07-20,False,False,False,False,False,False,True,False,False
+SKN01472,Nasr City,30.0569,31.3292,22500.0,13000.0,1.7307692307692308,3,Fully-Furnished,2026-04-03,False,False,False,True,False,True,False,True,False
+SKN01506,Sheikh Zayed,30.0389,30.9944,60000.0,226.0,265.4867256637168,4,Fully-Furnished,2025-12-31,False,False,False,False,False,False,True,False,False
+SKN01507,New Cairo,30.0101,31.4726,999999.0,117.0,8547.0,2,Unfurnished,2026-06-28,False,False,True,False,True,False,True,False,True
+SKN01559,Mohandeseen,30.0649,31.2025,1000000.0,158.0,6329.113924050633,2,Unfurnished,2026-06-21,False,False,True,False,True,False,True,False,True
+SKN01590,New Cairo,29.994,31.5095,59000.0,207.0,285.02415458937196,4,Semi-Furnished,2026-06-14,False,False,False,False,False,False,True,False,False
+SKN01604,Rehab City,30.0537,31.4948,59500.0,261.0,227.96934865900383,5,Furnished,2026-08-08,False,False,False,False,False,False,True,False,False
+SKN01624,Zamalek,30.0703,31.2215,61000.0,219.0,278.53881278538813,4,Unfurnished,2025-11-07,False,False,False,False,False,False,True,False,False
+SKN01645,Nasr City,30.0469,31.335,999999.0,160.0,6249.99375,3,Furnished,2026-05-15,False,False,True,False,True,False,True,False,True
+SKN01667,Maadi,29.9577,31.2573,60000.0,201.0,298.5074626865672,5,Furnished,2026-06-13,False,False,False,False,False,False,True,False,False
+SKN01673,Maadi,29.9578,31.2524,58500.0,258.0,226.74418604651163,5,Furnished,2026-04-14,False,False,False,False,False,False,True,False,False
+SKN01679,Zamalek,30.0531,31.2251,66500.0,235.0,282.97872340425533,5,Unfurnished,2025-10-09,False,False,False,False,False,False,True,False,False
+SKN01680,6th of October,29.9598,30.9318,18500.0,17000.0,1.088235294117647,3,Unfurnished,2026-01-09,False,False,False,True,False,True,False,True,False
+SKN01701,Zamalek,30.0687,31.2132,24000.0,60.0,400.0,1,Furnished,2026-03-18,False,False,False,False,False,False,False,False,True
+SKN01791,Maadi,29.9667,31.2621,61500.0,198.0,310.6060606060606,4,Furnished,2026-02-05,False,False,False,False,False,False,True,False,False
+SKN01840,Zamalek,,,64000.0,255.0,250.98039215686273,5,Unfurnished,2026-08-18,False,False,False,False,False,False,True,False,False
+SKN01857,Maadi,29.9687,31.2591,58500.0,182.0,321.42857142857144,3,Furnished,2026-06-27,False,False,False,False,False,False,True,False,False
+SKN01925,Maadi,29.9534,31.2501,60000.0,238.0,252.10084033613447,5,Semi-Furnished,2026-01-27,False,False,False,False,False,False,True,False,False

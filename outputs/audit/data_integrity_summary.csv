@@ -1,0 +1,9 @@
+check,count,interpretation
+Input analytical records,1851,Rows in core eligible input
+Nonpositive rent,0,Invalid for rent-based analysis
+Nonpositive size,0,Invalid for size and price-per-sqm analysis
+"Rent >= 100,000 EGP",10,"Review threshold, not automatic invalidity"
+"Rent exactly 999,999 or 1,000,000",9,Potential sentinel/test values; verify source
+Size >= 500 sqm,10,Review threshold; could include non-apartment properties
+"Size >= 1,000 sqm",10,Extreme size threshold; manual review
+Records flagged by any rule,75,Flags overlap; not a unique issue count per rule

@@ -1,0 +1,26 @@
+scenario,scenario_total_records,rooms,listing_count,median_monthly_rent_egp,mean_monthly_rent_egp,median_size_sqm,median_price_per_sqm
+Base - all eligible,1851,1,170,11000.00,17779.41,75.00,158.66
+Exclude rent >= 100k,1841,1,169,11000.00,11967.46,75.00,157.89
+Exclude rent >= 100k or size >= 500 sqm,1831,1,168,11000.00,11970.24,75.00,158.66
+Exclude size >= 500 sqm,1841,1,169,11000.00,17816.56,75.00,159.42
+Exclude suspicious rent codes,1842,1,169,11000.00,11967.46,75.00,157.89
+Base - all eligible,1851,2,536,17500.00,23682.84,117.00,152.88
+Exclude rent >= 100k,1841,2,533,17500.00,18187.62,117.00,151.38
+Exclude rent >= 100k or size >= 500 sqm,1831,2,530,17500.00,18181.14,117.00,152.88
+Exclude size >= 500 sqm,1841,2,533,17500.00,23707.32,117.00,153.85
+Exclude suspicious rent codes,1842,2,533,17500.00,18187.62,117.00,151.38
+Base - all eligible,1851,3,748,25000.00,30936.50,160.00,156.92
+Exclude rent >= 100k,1841,3,744,24500.00,25726.48,160.00,156.58
+Exclude rent >= 100k or size >= 500 sqm,1831,3,739,25000.00,25752.37,160.00,156.98
+Exclude size >= 500 sqm,1841,3,743,25000.00,30997.31,160.00,157.46
+Exclude suspicious rent codes,1842,3,744,24500.00,25726.48,160.00,156.58
+Base - all eligible,1851,4,300,31000.00,34980.01,203.00,154.43
+Exclude rent >= 100k,1841,4,299,31000.00,31752.52,203.00,154.03
+Exclude rent >= 100k or size >= 500 sqm,1831,4,298,31000.00,31780.21,203.00,154.43
+Exclude size >= 500 sqm,1841,4,299,31000.00,35018.40,203.00,154.82
+Exclude suspicious rent codes,1842,4,299,31000.00,31752.52,203.00,154.03
+Base - all eligible,1851,5,97,42000.00,42237.11,243.00,177.55
+Exclude rent >= 100k,1841,5,96,41750.00,41572.92,243.00,177.52
+Exclude rent >= 100k or size >= 500 sqm,1831,5,96,41750.00,41572.92,243.00,177.52
+Exclude size >= 500 sqm,1841,5,97,42000.00,42237.11,243.00,177.55
+Exclude suspicious rent codes,1842,5,97,42000.00,42237.11,243.00,177.55

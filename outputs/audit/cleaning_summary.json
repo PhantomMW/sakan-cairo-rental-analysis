@@ -1,0 +1,27 @@
+{
+    "original_rows": 2000,
+    "rows_after_exact_duplicate_removal": 1940,
+    "exact_duplicate_rows_removed": 60,
+    "rows_with_valid_positive_rent": 1917,
+    "rows_with_valid_positive_size": 1892,
+    "rows_with_valid_district": 1921,
+    "rows_with_valid_rooms": 1940,
+    "core_eligible_rows": 1851,
+    "rows_excluded_from_core_analysis": 89,
+    "missing_dates_after_parsing": 19,
+    "unparseable_nonmissing_dates": 0,
+    "unmatched_merged_rows": 19,
+    "repeated_listing_id_rows_after_exact_dedup": 0,
+    "furnishing_categories_after_normalization": [
+        "Fully-Furnished",
+        "Furnished",
+        "Semi-Furnished",
+        "Unfurnished"
+    ],
+    "suspicious_high_rent_rows": 11,
+    "suspicious_rent_code_rows": 9,
+    "suspicious_large_size_rows": 11,
+    "missing_or_unmapped_furnishing_rows": 0,
+    "missing_coordinate_rows": 38,
+    "out_of_range_coordinate_rows": 0
+}

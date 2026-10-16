@@ -1,0 +1,5 @@
+condition,affected_rows
+missing_or_invalid_rent,23
+missing_or_invalid_size,48
+missing_district,19
+missing_or_invalid_rooms,0

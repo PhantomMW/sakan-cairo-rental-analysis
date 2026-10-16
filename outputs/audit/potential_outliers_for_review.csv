@@ -1,0 +1,100 @@
+listing_id,district,latitude,longitude,size_sqm,rooms,furnished,monthly_rent_egp,listing_date,price_per_sqm,listing_month,population_density,avg_income_index,metro_access,audited_column,audited_value,outlier_direction
+SKN00004,Maadi,29.9598,31.2492,162.0,3,Unfurnished,1000000.0,2025-09-12,6172.83950617284,2025-09,15300.0,85.0,True,monthly_rent_egp,1000000.0,Above upper IQR bound
+SKN00008,Zamalek,,,146.0,3,Fully-Furnished,59000.0,2025-10-05,404.1095890410959,2025-10,21500.0,92.5,True,monthly_rent_egp,59000.0,Above upper IQR bound
+SKN00038,Zamalek,30.0725,31.227,200.0,3,Furnished,66000.0,2026-04-28,330.0,2026-04,21500.0,92.5,True,monthly_rent_egp,66000.0,Above upper IQR bound
+SKN00048,Zamalek,30.0633,31.2116,226.0,4,Furnished,72000.0,2025-09-04,318.5840707964602,2025-09,21500.0,92.5,True,monthly_rent_egp,72000.0,Above upper IQR bound
+SKN00087,Sheikh Zayed,30.0547,30.9664,209.0,4,Furnished,60000.0,2026-02-14,287.08133971291863,2026-02,2400.0,89.5,False,monthly_rent_egp,60000.0,Above upper IQR bound
+SKN00090,Zamalek,30.0591,31.2203,171.0,3,Furnished,64000.0,2025-09-23,374.2690058479532,2025-09,21500.0,92.5,True,monthly_rent_egp,64000.0,Above upper IQR bound
+SKN00135,Sheikh Zayed,30.0562,30.9724,209.0,4,Furnished,65000.0,2026-05-24,311.0047846889952,2026-05,2400.0,89.5,False,monthly_rent_egp,65000.0,Above upper IQR bound
+SKN00188,New Cairo,30.0136,31.4738,204.0,4,Furnished,60000.0,2026-05-16,294.11764705882354,2026-05,2800.0,88.2,False,monthly_rent_egp,60000.0,Above upper IQR bound
+SKN00206,Agouza,30.0595,31.2,56.0,1,Semi-Furnished,999999.0,2025-12-14,17857.125,2025-12,38000.0,72.8,True,monthly_rent_egp,999999.0,Above upper IQR bound
+SKN00229,New Cairo,30.0,31.4742,186.0,3,Fully-Furnished,58500.0,,314.51612903225805,,2800.0,88.2,False,monthly_rent_egp,58500.0,Above upper IQR bound
+SKN00230,New Cairo,30.0137,31.5011,221.0,4,Furnished,60500.0,2026-05-28,273.7556561085973,2026-05,2800.0,88.2,False,monthly_rent_egp,60500.0,Above upper IQR bound
+SKN00241,Zamalek,30.0627,31.2292,232.0,4,Unfurnished,60500.0,2026-04-29,260.7758620689655,2026-04,21500.0,92.5,True,monthly_rent_egp,60500.0,Above upper IQR bound
+SKN00296,Zamalek,30.056,31.2264,171.0,3,Furnished,59500.0,2025-11-12,347.953216374269,2025-11,21500.0,92.5,True,monthly_rent_egp,59500.0,Above upper IQR bound
+SKN00302,Heliopolis,30.0889,31.3151,75.0,2,Unfurnished,1000000.0,2026-04-26,13333.333333333334,2026-04,19500.0,82.1,True,monthly_rent_egp,1000000.0,Above upper IQR bound
+SKN00356,Maadi,29.9681,31.2607,186.0,4,Furnished,62500.0,2026-08-12,336.02150537634407,2026-08,15300.0,85.0,True,monthly_rent_egp,62500.0,Above upper IQR bound
+SKN00384,Zamalek,30.071,31.2134,164.0,3,Furnished,67000.0,2026-08-10,408.5365853658537,2026-08,21500.0,92.5,True,monthly_rent_egp,67000.0,Above upper IQR bound
+SKN00397,New Cairo,30.0064,31.5047,248.0,5,Unfurnished,61000.0,2026-05-15,245.96774193548387,2026-05,2800.0,88.2,False,monthly_rent_egp,61000.0,Above upper IQR bound
+SKN00406,Zamalek,30.0682,31.2226,225.0,4,Unfurnished,63000.0,2026-08-22,280.0,2026-08,21500.0,92.5,True,monthly_rent_egp,63000.0,Above upper IQR bound
+SKN00493,Zamalek,30.0571,31.2107,-260.0,5,Unfurnished,59500.0,2026-05-06,,2026-05,21500.0,92.5,True,monthly_rent_egp,59500.0,Above upper IQR bound
+SKN00576,Zamalek,30.0539,31.2199,270.0,5,Fully-Furnished,91500.0,2026-08-19,338.8888888888889,2026-08,21500.0,92.5,True,monthly_rent_egp,91500.0,Above upper IQR bound
+SKN00588,Zamalek,30.0666,31.2106,152.0,2,Fully-Furnished,59500.0,2025-09-10,391.4473684210527,2025-09,21500.0,92.5,True,monthly_rent_egp,59500.0,Above upper IQR bound
+SKN00663,Zamalek,30.0609,31.2203,178.0,3,Fully-Furnished,72500.0,2026-07-11,407.3033707865168,2026-07,21500.0,92.5,True,monthly_rent_egp,72500.0,Above upper IQR bound
+SKN00755,New Cairo,30.012,31.4804,260.0,5,Unfurnished,58500.0,2026-03-15,225.0,2026-03,2800.0,88.2,False,monthly_rent_egp,58500.0,Above upper IQR bound
+SKN00764,Zamalek,30.0688,31.2141,170.0,3,Furnished,62500.0,2026-05-05,367.6470588235294,2026-05,21500.0,92.5,True,monthly_rent_egp,62500.0,Above upper IQR bound
+SKN00796,Sheikh Zayed,30.0373,30.9796,255.0,5,Semi-Furnished,61500.0,2026-04-08,241.1764705882353,2026-04,2400.0,89.5,False,monthly_rent_egp,61500.0,Above upper IQR bound
+SKN00904,Zamalek,30.0672,31.2132,-230.0,4,Fully-Furnished,100000.0,2026-06-10,,2026-06,21500.0,92.5,True,monthly_rent_egp,100000.0,Above upper IQR bound
+SKN00959,Mohandeseen,30.0648,31.1979,179.0,3,Unfurnished,1000000.0,2026-01-11,5586.592178770949,2026-01,45000.0,80.7,True,monthly_rent_egp,1000000.0,Above upper IQR bound
+SKN00995,New Cairo,30.0133,31.4732,233.0,5,Furnished,65000.0,2026-05-07,278.9699570815451,2026-05,2800.0,88.2,False,monthly_rent_egp,65000.0,Above upper IQR bound
+SKN01065,Sheikh Zayed,30.0236,30.9743,261.0,5,Furnished,60500.0,2025-10-04,231.8007662835249,2025-10,2400.0,89.5,False,monthly_rent_egp,60500.0,Above upper IQR bound
+SKN01129,Sheikh Zayed,30.04,30.9804,246.0,5,Fully-Furnished,60000.0,2026-03-14,243.90243902439025,2026-03,2400.0,89.5,False,monthly_rent_egp,60000.0,Above upper IQR bound
+SKN01190,Sheikh Zayed,30.0348,30.9832,246.0,5,Semi-Furnished,64000.0,2026-04-09,260.1626016260163,2026-04,2400.0,89.5,False,monthly_rent_egp,64000.0,Above upper IQR bound
+SKN01237,Maadi,29.9517,31.2617,244.0,5,Furnished,71000.0,2026-03-03,290.9836065573771,2026-03,15300.0,85.0,True,monthly_rent_egp,71000.0,Above upper IQR bound
+SKN01263,Zamalek,30.0658,31.2291,202.0,4,Semi-Furnished,64500.0,2025-12-05,319.3069306930693,2025-12,21500.0,92.5,True,monthly_rent_egp,64500.0,Above upper IQR bound
+SKN01307,Nasr City,30.0477,31.3297,174.0,3,Unfurnished,999999.0,2026-06-15,5747.120689655172,2026-06,35000.0,68.4,True,monthly_rent_egp,999999.0,Above upper IQR bound
+SKN01333,Zamalek,30.069,31.2137,209.0,4,Semi-Furnished,59500.0,2025-10-17,284.688995215311,2025-10,21500.0,92.5,True,monthly_rent_egp,59500.0,Above upper IQR bound
+SKN01338,Faisal,30.0085,31.1756,193.0,4,Unfurnished,999999.0,2026-03-22,5181.341968911917,2026-03,110000.0,35.6,True,monthly_rent_egp,999999.0,Above upper IQR bound
+SKN01360,Sheikh Zayed,30.0319,30.9762,277.0,5,Unfurnished,59000.0,2026-03-09,212.9963898916968,2026-03,2400.0,89.5,False,monthly_rent_egp,59000.0,Above upper IQR bound
+SKN01377,Zamalek,30.0548,31.227,265.0,5,Furnished,106000.0,2025-12-31,400.0,2025-12,21500.0,92.5,True,monthly_rent_egp,106000.0,Above upper IQR bound
+SKN01441,Zamalek,30.064,31.2224,204.0,3,Furnished,66500.0,2025-12-06,325.9803921568628,2025-12,21500.0,92.5,True,monthly_rent_egp,66500.0,Above upper IQR bound
+SKN01449,New Cairo,30.021,31.488,248.0,5,Furnished,75500.0,2026-02-28,304.43548387096774,2026-02,2800.0,88.2,False,monthly_rent_egp,75500.0,Above upper IQR bound
+SKN01468,Zamalek,30.0647,31.2293,239.0,5,Unfurnished,60500.0,2026-06-18,253.13807531380752,2026-06,21500.0,92.5,True,monthly_rent_egp,60500.0,Above upper IQR bound
+SKN01471,New Cairo,29.9898,31.475,195.0,4,Furnished,65000.0,2026-07-20,333.3333333333333,2026-07,2800.0,88.2,False,monthly_rent_egp,65000.0,Above upper IQR bound
+SKN01506,Sheikh Zayed,30.0389,30.9944,226.0,4,Fully-Furnished,60000.0,2025-12-31,265.4867256637168,2025-12,2400.0,89.5,False,monthly_rent_egp,60000.0,Above upper IQR bound
+SKN01507,New Cairo,30.0101,31.4726,117.0,2,Unfurnished,999999.0,2026-06-28,8547.0,2026-06,2800.0,88.2,False,monthly_rent_egp,999999.0,Above upper IQR bound
+SKN01559,Mohandeseen,30.0649,31.2025,158.0,2,Unfurnished,1000000.0,2026-06-21,6329.113924050633,2026-06,45000.0,80.7,True,monthly_rent_egp,1000000.0,Above upper IQR bound
+SKN01590,New Cairo,29.994,31.5095,207.0,4,Semi-Furnished,59000.0,2026-06-14,285.024154589372,2026-06,2800.0,88.2,False,monthly_rent_egp,59000.0,Above upper IQR bound
+SKN01604,Rehab City,30.0537,31.4948,261.0,5,Furnished,59500.0,2026-08-08,227.96934865900383,2026-08,3500.0,86.9,False,monthly_rent_egp,59500.0,Above upper IQR bound
+SKN01624,Zamalek,30.0703,31.2215,219.0,4,Unfurnished,61000.0,2025-11-07,278.53881278538813,2025-11,21500.0,92.5,True,monthly_rent_egp,61000.0,Above upper IQR bound
+SKN01645,Nasr City,30.0469,31.335,160.0,3,Furnished,999999.0,2026-05-15,6249.99375,2026-05,35000.0,68.4,True,monthly_rent_egp,999999.0,Above upper IQR bound
+SKN01667,Maadi,29.9577,31.2573,201.0,5,Furnished,60000.0,2026-06-13,298.5074626865672,2026-06,15300.0,85.0,True,monthly_rent_egp,60000.0,Above upper IQR bound
+SKN01673,Maadi,29.9578,31.2524,258.0,5,Furnished,58500.0,2026-04-14,226.74418604651163,2026-04,15300.0,85.0,True,monthly_rent_egp,58500.0,Above upper IQR bound
+SKN01679,Zamalek,30.0531,31.2251,235.0,5,Unfurnished,66500.0,2025-10-09,282.97872340425533,2025-10,21500.0,92.5,True,monthly_rent_egp,66500.0,Above upper IQR bound
+SKN01791,Maadi,29.9667,31.2621,198.0,4,Furnished,61500.0,2026-02-05,310.6060606060606,2026-02,15300.0,85.0,True,monthly_rent_egp,61500.0,Above upper IQR bound
+SKN01840,Zamalek,,,255.0,5,Unfurnished,64000.0,2026-08-18,250.98039215686276,2026-08,21500.0,92.5,True,monthly_rent_egp,64000.0,Above upper IQR bound
+SKN01857,Maadi,29.9687,31.2591,182.0,3,Furnished,58500.0,2026-06-27,321.42857142857144,2026-06,15300.0,85.0,True,monthly_rent_egp,58500.0,Above upper IQR bound
+SKN01925,Maadi,29.9534,31.2501,238.0,5,Semi-Furnished,60000.0,2026-01-27,252.10084033613447,2026-01,15300.0,85.0,True,monthly_rent_egp,60000.0,Above upper IQR bound
+SKN00052,Nasr City,30.0511,31.3401,-107.0,2,Unfurnished,12500.0,2026-01-22,,2026-01,35000.0,68.4,True,size_sqm,-107.0,Below lower IQR bound
+SKN00177,Faisal,30.0036,31.1708,-182.0,4,Furnished,14500.0,2025-12-08,,2025-12,110000.0,35.6,True,size_sqm,-182.0,Below lower IQR bound
+SKN00223,Heliopolis,30.0972,31.3284,-186.0,4,Unfurnished,22000.0,2025-09-12,,2025-09,19500.0,82.1,True,size_sqm,-186.0,Below lower IQR bound
+SKN00305,Nasr City,30.0587,31.3323,15200.0,3,Fully-Furnished,25500.0,2025-09-23,1.6776315789473684,2025-09,35000.0,68.4,True,size_sqm,15200.0,Above upper IQR bound
+SKN00307,Heliopolis,30.0908,31.3246,-183.0,3,Unfurnished,25000.0,2025-09-30,,2025-09,19500.0,82.1,True,size_sqm,-183.0,Below lower IQR bound
+SKN00370,Madinaty,30.0884,31.6474,22300.0,4,Semi-Furnished,,2026-02-02,,2026-02,2100.0,87.4,False,size_sqm,22300.0,Above upper IQR bound
+SKN01527,Mohandeseen,30.0475,31.1936,276.0,5,Unfurnished,41500.0,2026-01-02,150.36231884057972,2026-01,45000.0,80.7,True,size_sqm,276.0,Above upper IQR bound
+SKN00451,Heliopolis,30.0826,31.3189,14100.0,3,Unfurnished,21000.0,2026-04-13,1.4893617021276595,2026-04,19500.0,82.1,True,size_sqm,14100.0,Above upper IQR bound
+SKN00476,Sheikh Zayed,30.0527,31.0038,-192.0,3,Unfurnished,32000.0,2026-06-18,,2026-06,2400.0,89.5,False,size_sqm,-192.0,Below lower IQR bound
+SKN00493,Zamalek,30.0571,31.2107,-260.0,5,Unfurnished,59500.0,2026-05-06,,2026-05,21500.0,92.5,True,size_sqm,-260.0,Below lower IQR bound
+SKN00535,6th of October,29.9654,30.9085,-246.0,5,Furnished,31500.0,2025-10-12,,2025-10,3100.0,65.0,False,size_sqm,-246.0,Below lower IQR bound
+SKN00554,New Cairo,,,-115.0,2,Unfurnished,23000.0,2025-12-21,,2025-12,2800.0,88.2,False,size_sqm,-115.0,Below lower IQR bound
+SKN00555,Maadi,29.9574,31.2633,-145.0,3,Unfurnished,24500.0,2025-12-12,,2025-12,15300.0,85.0,True,size_sqm,-145.0,Below lower IQR bound
+SKN00619,Rehab City,30.0694,31.4858,295.0,5,Semi-Furnished,38000.0,2025-11-23,128.8135593220339,2025-11,3500.0,86.9,False,size_sqm,295.0,Above upper IQR bound
+SKN00656,Haram,29.9988,31.162,-99.0,2,Unfurnished,6500.0,2026-03-18,,2026-03,85000.0,45.1,True,size_sqm,-99.0,Below lower IQR bound
+SKN00675,,30.0414,31.2468,-197.0,3,Unfurnished,15500.0,2026-04-12,,2026-04,,,,size_sqm,-197.0,Below lower IQR bound
+SKN00676,Heliopolis,30.0907,31.3301,-145.0,3,Unfurnished,18000.0,2025-10-10,,2025-10,19500.0,82.1,True,size_sqm,-145.0,Below lower IQR bound
+SKN00690,Rehab City,30.0646,31.4855,7700.0,1,Unfurnished,11500.0,2026-01-19,1.4935064935064934,2026-01,3500.0,86.9,False,size_sqm,7700.0,Above upper IQR bound
+SKN00707,Heliopolis,30.0994,31.3274,-104.0,2,Semi-Furnished,15000.0,2025-10-28,,2025-10,19500.0,82.1,True,size_sqm,-104.0,Below lower IQR bound
+SKN00790,Nasr City,30.0519,31.3274,16800.0,3,Semi-Furnished,22000.0,2026-07-26,1.3095238095238095,2026-07,35000.0,68.4,True,size_sqm,16800.0,Above upper IQR bound
+SKN00804,Sheikh Zayed,30.0514,30.9864,11400.0,2,Unfurnished,24500.0,2026-07-01,2.149122807017544,2026-07,2400.0,89.5,False,size_sqm,11400.0,Above upper IQR bound
+SKN00834,New Cairo,30.0213,31.4774,-144.0,3,Unfurnished,29500.0,2026-04-02,,2026-04,2800.0,88.2,False,size_sqm,-144.0,Below lower IQR bound
+SKN00893,Manial,30.0237,31.2219,-139.0,2,Fully-Furnished,20500.0,2026-08-03,,2026-08,31000.0,76.2,False,size_sqm,-139.0,Below lower IQR bound
+SKN00904,Zamalek,30.0672,31.2132,-230.0,4,Fully-Furnished,100000.0,2026-06-10,,2026-06,21500.0,92.5,True,size_sqm,-230.0,Below lower IQR bound
+SKN00925,Mokattam,30.0203,31.3056,10200.0,2,Fully-Furnished,12000.0,2025-11-05,1.1764705882352942,2025-11,12000.0,62.3,False,size_sqm,10200.0,Above upper IQR bound
+SKN01110,Giza Square,30.0136,31.2114,-225.0,4,Unfurnished,14000.0,2026-02-27,,2026-02,65000.0,48.6,True,size_sqm,-225.0,Below lower IQR bound
+SKN01123,Zamalek,30.0676,31.21,-136.0,3,Furnished,56000.0,2026-01-30,,2026-01,21500.0,92.5,True,size_sqm,-136.0,Below lower IQR bound
+SKN01176,Dokki,30.0305,31.2049,-184.0,3,Unfurnished,27500.0,2026-03-31,,2026-03,42000.0,75.3,True,size_sqm,-184.0,Below lower IQR bound
+SKN01188,Obour City,30.2258,31.4598,-228.0,5,Furnished,19500.0,2026-02-19,,2026-02,2900.0,55.8,False,size_sqm,-228.0,Below lower IQR bound
+SKN01268,Sheikh Zayed,30.0421,30.9967,-138.0,3,Furnished,32500.0,2026-04-03,,2026-04,2400.0,89.5,False,size_sqm,-138.0,Below lower IQR bound
+SKN01284,Maadi,29.959,31.2608,11200.0,2,Unfurnished,21500.0,2026-08-02,1.9196428571428568,2026-08,15300.0,85.0,True,size_sqm,11200.0,Above upper IQR bound
+SKN01345,Nasr City,30.0473,31.3311,19700.0,4,Semi-Furnished,23500.0,2025-10-04,1.1928934010152283,2025-10,35000.0,68.4,True,size_sqm,19700.0,Above upper IQR bound
+SKN01360,Sheikh Zayed,30.0319,30.9762,277.0,5,Unfurnished,59000.0,2026-03-09,212.9963898916968,2026-03,2400.0,89.5,False,size_sqm,277.0,Above upper IQR bound
+SKN01472,Nasr City,30.0569,31.3292,13000.0,3,Fully-Furnished,22500.0,2026-04-03,1.7307692307692308,2026-04,35000.0,68.4,True,size_sqm,13000.0,Above upper IQR bound
+SKN01476,Sheikh Zayed,30.0379,30.9732,-204.0,4,Unfurnished,31000.0,2025-10-02,,2025-10,2400.0,89.5,False,size_sqm,-204.0,Below lower IQR bound
+SKN01490,Imbaba,30.0701,31.2073,-194.0,4,Unfurnished,10500.0,2026-06-25,,2026-06,135000.0,25.4,True,size_sqm,-194.0,Below lower IQR bound
+SKN01495,6th of October,29.9528,30.9363,-181.0,3,Fully-Furnished,31000.0,2026-07-12,,2026-07,3100.0,65.0,False,size_sqm,-181.0,Below lower IQR bound
+SKN01535,6th of October,29.9691,30.9414,-123.0,2,Unfurnished,13500.0,2026-04-24,,2026-04,3100.0,65.0,False,size_sqm,-123.0,Below lower IQR bound
+SKN01621,Mohandeseen,30.0597,31.1941,-114.0,2,Unfurnished,19500.0,2025-09-24,,2025-09,45000.0,80.7,True,size_sqm,-114.0,Below lower IQR bound
+SKN01680,6th of October,29.9598,30.9318,17000.0,3,Unfurnished,18500.0,2026-01-09,1.088235294117647,2026-01,3100.0,65.0,False,size_sqm,17000.0,Above upper IQR bound
+SKN01681,Dokki,30.0454,31.2064,-146.0,2,Unfurnished,23500.0,2026-01-02,,2026-01,42000.0,75.3,True,size_sqm,-146.0,Below lower IQR bound
+SKN01728,Shorouk City,30.149,31.6183,-116.0,2,Furnished,18000.0,2026-06-27,,2026-06,2200.0,70.5,False,size_sqm,-116.0,Below lower IQR bound
+SKN01881,6th of October,29.9611,30.912,-107.0,2,Unfurnished,11500.0,2025-09-29,,2025-09,3100.0,65.0,False,size_sqm,-107.0,Below lower IQR bound

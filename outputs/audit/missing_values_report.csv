@@ -1,0 +1,14 @@
+dataset,column,data_type,missing_count,missing_percentage,unique_values
+rental_listings,listing_id,object,0,0.0,1940
+rental_listings,district,object,19,0.95,48
+rental_listings,latitude,float64,40,2.0,1115
+rental_listings,longitude,float64,40,2.0,1343
+rental_listings,size_sqm,object,19,0.95,324
+rental_listings,rooms,int64,0,0.0,5
+rental_listings,furnished,object,0,0.0,12
+rental_listings,monthly_rent_egp,object,0,0.0,189
+rental_listings,listing_date,object,21,1.05,398
+district_metadata,district,object,0,0.0,26
+district_metadata,population_density,int64,0,0.0,25
+district_metadata,avg_income_index,float64,0,0.0,26
+district_metadata,metro_access,bool,0,0.0,2

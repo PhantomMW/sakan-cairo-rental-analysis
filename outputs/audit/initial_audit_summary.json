@@ -1,0 +1,22 @@
+{
+    "rental_rows": 2000,
+    "rental_columns": 9,
+    "district_metadata_rows": 26,
+    "district_metadata_columns": 4,
+    "rental_exact_duplicates": 60,
+    "district_exact_duplicates": 0,
+    "rental_missing_cells": 139,
+    "district_missing_cells": 0,
+    "rental_missing_values_by_column": {
+        "listing_id": 0,
+        "district": 19,
+        "latitude": 40,
+        "longitude": 40,
+        "size_sqm": 19,
+        "rooms": 0,
+        "furnished": 0,
+        "monthly_rent_egp": 0,
+        "listing_date": 21
+    },
+    "duplicate_listing_id_excess": 60
+}

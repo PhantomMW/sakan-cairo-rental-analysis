@@ -1,0 +1,64 @@
+listing_id,district,latitude,longitude,size_sqm,rooms,furnished,monthly_rent_egp,listing_date,audit_reason
+SKN00004,Maadi,29.9598,31.2492,162,3,Unfurnished,1000000,2025-09-12,Above exploratory IQR upper bound
+SKN00008,Zamalek,,,146,3,Fully Furnished,59000,2025-10-05,Above exploratory IQR upper bound
+SKN00020,Obour City,30.232,31.4946,122,2,no,0,2025-11-21,Non-positive rental price
+SKN00038,Zamalek,30.0725,31.227,200,3,f,66000,2026-04-28,Above exploratory IQR upper bound
+SKN00048,Zamalek,30.0633,31.2116,226,4,Furnished,72000,2025-09-04,Above exploratory IQR upper bound
+SKN00087,Sheikh Zayed,30.0547,30.9664,209,4,Furnished,60000,2026-02-14,Above exploratory IQR upper bound
+SKN00090,Zamalek,30.0591,31.2203,171,3,Furnished,64000,2025-09-23,Above exploratory IQR upper bound
+SKN00135,Sheikh Zayed,30.0562,30.9724,209,4,Furnished,65000,2026-05-24,Above exploratory IQR upper bound
+SKN00188,New Cairo,30.0136,31.4738,204,4,Furnished,60000,2026-05-16,Above exploratory IQR upper bound
+SKN00206,Agouza,30.0595,31.2,56,1,Semi-Furnished,999999,2025-12-14,Above exploratory IQR upper bound
+SKN00229,New Cairo,30.0,31.4742,186,3,Fully Furnished,58500,,Above exploratory IQR upper bound
+SKN00230,New Cairo,30.0137,31.5011,221,4,f,60500,2026-05-28,Above exploratory IQR upper bound
+SKN00241,Zamalek,30.0627,31.2292,232,4,no,60500,2026-04-29,Above exploratory IQR upper bound
+SKN00296,ZAMALEK,30.056,31.2264,171,3,Y,59500,2025-11-12,Above exploratory IQR upper bound
+SKN00302,Heliopolis,30.0889,31.3151,75,2,no,1000000,2026-04-26,Above exploratory IQR upper bound
+SKN00356,Maadi,29.9681,31.2607,186,4,yes,62500,2026-08-12,Above exploratory IQR upper bound
+SKN00384,Zamalek,30.071,31.2134,164,3,Y,67000,2026-08-10,Above exploratory IQR upper bound
+SKN00397,New Cairo,30.0064,31.5047,248,5,N,61000,2026-05-15,Above exploratory IQR upper bound
+SKN00406,Zamalek,30.0682,31.2226,225,4,UNFURNISHED,63000,2026-08-22,Above exploratory IQR upper bound
+SKN00493,Zamalek,30.0571,31.2107,-260,5,N,59500,2026-05-06,Above exploratory IQR upper bound
+SKN00576,Zamalek,30.0539,31.2199,270,5,Fully Furnished,91500,2026-08-19,Above exploratory IQR upper bound
+SKN00588,Zamalek,30.0666,31.2106,152,2,Fully Furnished,59500,2025-09-10,Above exploratory IQR upper bound
+SKN00663,Zamalek,30.0609,31.2203,178,3,Fully Furnished,72500,2026-07-11,Above exploratory IQR upper bound
+SKN00693,Maadi,29.9541,31.2602,207,4,Fully Furnished,0,2025-09-10,Non-positive rental price
+SKN00755,New Cairo,30.012,31.4804,260,5,UNFURNISHED,58500,2026-03-15,Above exploratory IQR upper bound
+SKN00764,Zamalek,30.0688,31.2141,170,3,yes,62500,2026-05-05,Above exploratory IQR upper bound
+SKN00796,Sheikh Zayed,30.0373,30.9796,255,5,semi,61500,2026-04-08,Above exploratory IQR upper bound
+SKN00843,Madinaty,30.1229,31.6369,122,2,Furnished,0,2026-05-23,Non-positive rental price
+SKN00861,Maadi,29.9613,31.2543,189,4,Unfurnished,0,2026-04-11,Non-positive rental price
+SKN00904,Zamalek,30.0672,31.2132,-230,4,Fully Furnished,100000,2026-06-10,Above exploratory IQR upper bound
+SKN00933,6th of October,29.9822,30.9108,117,3,no,0,2025-09-27,Non-positive rental price
+SKN00959,Mohandeseen,30.0648,31.1979,179,3,no,1000000,2026-01-11,Above exploratory IQR upper bound
+SKN00995,New Cairo,30.0133,31.4732,233,5,Furnished,65000,2026-05-07,Above exploratory IQR upper bound
+SKN01065,Sheikh Zayed,30.0236,30.9743,261,5,yes,60500,2025-10-04,Above exploratory IQR upper bound
+SKN01129,Sheikh Zayed,30.04,30.9804,246,5,Fully Furnished,60000,2026-03-14,Above exploratory IQR upper bound
+SKN01190,Sheikh Zayed,30.0348,30.9832,246,5,semi,64000,2026-04-09,Above exploratory IQR upper bound
+SKN01237,Maadi,29.9517,31.2617,244,5,yes,71000,2026-03-03,Above exploratory IQR upper bound
+SKN00493,Zamalek,30.0571,31.2107,-260,5,N,59500,2026-05-06,Above exploratory IQR upper bound
+SKN01263,Zamalek,30.0658,31.2291,202,4,semi,64500,2025-12-05,Above exploratory IQR upper bound
+SKN01307,Nasr City,30.0477,31.3297,174,3,Unfurnished,999999,2026-06-15,Above exploratory IQR upper bound
+SKN01333,Zamalek,30.069,31.2137,209,4,Semi-Furnished,59500,2025-10-17,Above exploratory IQR upper bound
+SKN01338,Faisal,30.0085,31.1756,193,4,not furnished,999999,2026-03-22,Above exploratory IQR upper bound
+SKN01360,Sheikh Zayed,30.0319,30.9762,277,5,no,59000,2026-03-09,Above exploratory IQR upper bound
+SKN01377,Zamalek,30.0548,31.227,265,5,f,106000,2025-12-31,Above exploratory IQR upper bound
+SKN01430,Mokattam,30.0235,31.2933,176 ,3,UNFURNISHED,0,2026-05-25,Non-positive rental price
+SKN01441,Zamalek,30.064,31.2224,204,3,yes,66500,2025-12-06,Above exploratory IQR upper bound
+SKN01449,new cairo,30.021,31.488,248 sqm ,5,Furnished,75500,2026-02-28,Above exploratory IQR upper bound
+SKN01468,Zamalek,30.0647,31.2293,239,5,N,60500,2026-06-18,Above exploratory IQR upper bound
+SKN01471,New Cairo,29.9898,31.475,195,4,yes,65000,2026-07-20,Above exploratory IQR upper bound
+SKN01506,Sheikh Zayed,30.0389,30.9944,226,4,Fully Furnished,60000,2025-12-31,Above exploratory IQR upper bound
+SKN01507,New Cairo,30.0101,31.4726,117,2,Unfurnished,999999,2026-06-28,Above exploratory IQR upper bound
+SKN01559,Mohandeseen,30.0649,31.2025,158,2,not furnished,1000000,2026-06-21,Above exploratory IQR upper bound
+SKN01590,New Cairo,29.994,31.5095,207,4,Semi-Furnished,59000,2026-06-14,Above exploratory IQR upper bound
+SKN01604,Rehab City,30.0537,31.4948,261,5,yes,59500,2026-08-08,Above exploratory IQR upper bound
+SKN01624,Zamalek,30.0703,31.2215,219,4,N,61000,2025-11-07,Above exploratory IQR upper bound
+SKN01645,Nasr City,30.0469,31.335,160,3,Furnished,999999,2026-05-15,Above exploratory IQR upper bound
+SKN01667,Maadi,29.9577,31.2573,201,5,Furnished,60000,2026-06-13,Above exploratory IQR upper bound
+SKN01673,Maadi,29.9578,31.2524,258 ,5,yes,58500,2026-04-14,Above exploratory IQR upper bound
+SKN01679,Zamalek,30.0531,31.2251,235,5,not furnished,66500,2025-10-09,Above exploratory IQR upper bound
+SKN01791,Maadi,29.9667,31.2621,198,4,Furnished,61500,2026-02-05,Above exploratory IQR upper bound
+SKN01840,Zamalek,,,255,5,UNFURNISHED,64000,2026-08-18,Above exploratory IQR upper bound
+SKN01857,Maadi,29.9687,31.2591,182,3,Furnished,58500,2026-06-27,Above exploratory IQR upper bound
+SKN01925,Maadi,29.9534,31.2501,238,5,Semi-Furnished,60000,2026-01-27,Above exploratory IQR upper bound

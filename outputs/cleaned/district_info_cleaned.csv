@@ -1,0 +1,27 @@
+district,population_density,avg_income_index,metro_access
+Zamalek,21500,92.5,True
+Maadi,15300,85.0,True
+New Cairo,2800,88.2,False
+Nasr City,35000,68.4,True
+Heliopolis,19500,82.1,True
+Dokki,42000,75.3,True
+Mohandeseen,45000,80.7,True
+6th of October,3100,65.0,False
+Sheikh Zayed,2400,89.5,False
+Downtown Cairo,55000,58.2,True
+Shoubra,125000,32.4,True
+Agouza,38000,72.8,True
+Haram,85000,45.1,True
+Faisal,110000,35.6,True
+Mokattam,12000,62.3,False
+Rehab City,3500,86.9,False
+Madinaty,2100,87.4,False
+Helwan,45000,28.7,True
+El Marg,95000,22.1,True
+Shorouk City,2200,70.5,False
+Sayeda Zeinab,78000,30.9,True
+Manial,31000,76.2,False
+Obour City,2900,55.8,False
+Badr City,1800,42.0,False
+Imbaba,135000,25.4,True
+Giza Square,65000,48.6,True

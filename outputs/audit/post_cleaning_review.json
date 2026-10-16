@@ -1,0 +1,24 @@
+{
+    "date_review": {
+        "original_rows": 2000,
+        "original_missing_dates": 21,
+        "original_unparseable_nonmissing_dates": 0,
+        "cleaned_rows": 1940,
+        "cleaned_missing_dates": 19,
+        "cleaned_parseable_dates": 1921
+    },
+    "cleaned_rows": 1940,
+    "core_eligible_rows": 1851,
+    "furnishing_categories": [
+        "Fully-Furnished",
+        "Furnished",
+        "Semi-Furnished",
+        "Unfurnished"
+    ],
+    "eligibility_conditions": {
+        "missing_or_invalid_rent": 23,
+        "missing_or_invalid_size": 48,
+        "missing_district": 19,
+        "missing_or_invalid_rooms": 0
+    }
+}

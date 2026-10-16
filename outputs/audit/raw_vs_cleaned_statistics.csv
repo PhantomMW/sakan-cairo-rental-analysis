@@ -1,0 +1,5 @@
+column,stage,count,mean,median,minimum,maximum
+monthly_rent_egp,Raw parseable values,1994,28686.31043129388,22000.0,1.0,1000000.0
+monthly_rent_egp,Cleaned numeric values,1917,28797.86280646844,22000.0,1.0,1000000.0
+size_sqm,Raw parseable values,1951,232.51973347001538,153.0,45.0,22300.0
+size_sqm,Cleaned numeric values,1892,235.0502114164905,153.0,45.0,22300.0
