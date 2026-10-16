@@ -292,11 +292,11 @@ The project calculates rent per square meter as a size-adjusted rental-price met
 
 The formula is:
 
-\[
+$
 \text{Rent per Square Meter}
 =
 \frac{\text{Monthly Rent (EGP)}}{\text{Property Size (m}^2\text{)}}
-\]
+$
 
 Where:
 
