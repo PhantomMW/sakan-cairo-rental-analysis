@@ -15,7 +15,7 @@ Transforming Raw Rental Listings into Meaningful Market Insights
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
 ![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-4C72B0?style=for-the-badge)
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![Folium](https://img.shields.io/badge/Folium-Geospatial_Analysis-2E8B57?style=for-the-badge)
+![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-Geospatial_Intelligence-2E8B57?style=for-the-badge&logo=openstreetmap&logoColor=white)
 
 </div>
 
@@ -143,11 +143,10 @@ The project addresses the following analytical questions.
 | NumPy | Numerical operations and data filtering |
 | Matplotlib | Static charts and statistical visualization |
 | Seaborn | Distribution analysis and comparative visualization |
-| Plotly | Interactive visualization capabilities |
-| Folium | Interactive geographic mapping |
+| Plotly | Interactive visualization and geospatial mapping intelligence |
+| HTML / CSS / JS | Standalone interactive executive dashboard output |
 | CSV | Storage of datasets and analytical results |
 | JSON | Structured audit summaries |
-| HTML | Interactive map output |
 | PowerShell | Windows command-line execution and file management |
 | Git and GitHub | Version control and project hosting |
 
@@ -236,7 +235,13 @@ The district metadata dataset contains contextual district attributes, including
 - Average income index.
 - Metro accessibility.
 
-These attributes provide additional district context where applicable to the analytical workflow.
+### 3. Data Provenance, Scope, and Terms of Use
+
+- **Data Provenance:** The dataset represents advertised rental property listings aggregated across Greater Cairo online property portals over a 12-month period (September 2025 – August 2026), compiled to simulate real-world rental expansion analytics for Sakan.
+- **Analytical & Research Scope:** This project is designed for exploratory data analysis, data quality auditing, pipeline orchestration, and geographic visualization.
+- **Nature of Data (Asking vs. Completed Contracts):** All financial metrics represent *advertised asking rents*. They reflect landlord and broker listing prices and do not capture negotiated tenant discounts, concessions, or executed lease agreements.
+- **Privacy & Compliance:** The dataset contains purely property-level attributes (district, size, rooms, furnishing, rent, coordinates, and timestamp). No personal identifiable information (PII) of property owners, tenants, or agents is present.
+- **Geographic Precision:** Geographic coordinates represent localized property or district centroid coordinates suitable for spatial clustering and heatmap exploration, rather than official cadastral boundaries.
 
 ---
 
@@ -521,7 +526,7 @@ A virtual environment keeps the project's Python dependencies separate from othe
 
 ### 3. Install Dependencies
 
-Install the project's Python dependencies from the dependency file:
+Install the pinned, production-tested dependencies from `requirements.txt`:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -529,21 +534,23 @@ python -m pip install -r requirements.txt
 
 ### 4. Verify the Project Files
 
-From the project root, verify that `run_pipeline.py` and the required source datasets are present.
-
-The pipeline expects the project files and data to be available in their configured locations.
+From the project root, verify that `run_pipeline.py` and the required source datasets are present in `data/`.
 
 ---
 
 ## Running the Project
 
-Execute the analysis pipeline from the project root:
+Execute the unified analysis pipeline from the project root:
 
 ```powershell
-python run_pipeline.py
+# Default high-speed execution mode (runs all 14 stages in ~7.5 seconds):
+python .\run_pipeline.py
+
+# Subprocess execution mode (runs in fresh Python processes in ~19 seconds):
+python .\run_pipeline.py --subprocess
 ```
 
-The pipeline runs the configured workflow and generates its corresponding analytical outputs.
+The pipeline executes all 14 analytical and visualization stages in strict dependency order, logs runtime benchmarks, and automatically audits all 35 deliverables across `outputs/` to ensure full data consistency and synchronization.
 
 ### Reviewing the Results
 

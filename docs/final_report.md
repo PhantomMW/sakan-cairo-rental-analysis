@@ -97,6 +97,14 @@ The project defines distinct analytical populations tailored to the specific dat
 2. **Missing Dates in Monthly Analysis:** Exactly **19 records** in the core eligible analytical dataset have unparseable or missing listing dates post-cleaning. Consequently, the monthly panel analysis evaluates $1,851 - 19 = \mathbf{1,832}$ records across the 12-month period.
 3. **Map Sample Reconciliation:** The interactive map displays **1,843 listings** rather than 1,851. Spatial rendering strictly requires valid GPS coordinates within Greater Cairo's geographic bounding box ($[29.4, 30.7]^\circ\text{N}, [30.5, 32.2]^\circ\text{E}$) and applies boundary filters ($500 < \text{rent} < 500,000\text{ EGP}$) to prevent coordinate-free records or scraper scale distortions from compromising the map interface.
 
+### 3.4 Data Provenance, Analytical Scope, and Terms of Use
+
+- **Data Provenance:** The dataset comprises scraped real estate rental listings advertised across Greater Cairo online property portals over a 12-month period (September 2025 – August 2026), compiled to simulate business expansion analytics for Sakan.
+- **Analytical & Educational Scope:** This project is designed for exploratory data analysis, quality auditing, pipeline orchestration, and strategic market exploration.
+- **Nature of Data (Asking vs. Transaction Prices):** All financial metrics represent *advertised asking rents* set by landlords and brokers. They do not record finalized, notarized lease agreements, tenant concessions, discounts, or vacancy rates.
+- **Privacy and Data Protection:** The records contain purely property-level attributes (district, coordinates, size, rooms, furnishing status, rent, and listing timestamp). No personal identifiable information (PII) of property owners, brokers, or tenants is collected or stored.
+- **Geographic Precision:** Geographic coordinates represent approximate property locations or localized district centroid offsets suitable for spatial clustering and heatmap density analysis, rather than survey-grade cadastral boundaries.
+
 ---
 
 ## 4. Data Cleaning and Quality Assessment
@@ -402,25 +410,28 @@ The monthly analysis covers September 2025 through August 2026 and evaluates **1
 
 Across the Greater Cairo market as a whole, monthly median rents exhibit a general upward progression over the 12-month period, punctuated by mid-year seasonal fluctuations.
 
-| Listing Month | Listings | Median Monthly Rent (EGP) | Mean Monthly Rent (EGP) |
-|---|---:|---:|---:|
-| September 2025 | 134 | 20,000 | 26,145.52 |
-| October 2025 | 170 | 20,750 | 26,782.35 |
-| November 2025 | 165 | 23,000 | 30,121.21 |
-| December 2025 | 125 | 22,500 | 28,488.00 |
-| January 2026 | 153 | 22,000 | 27,941.18 |
-| February 2026 | 125 | 22,500 | 29,320.00 |
-| March 2026 | 171 | 21,000 | 27,865.50 |
-| April 2026 | 166 | 22,500 | 29,060.24 |
-| May 2026 | 162 | 23,000 | 30,154.32 |
-| June 2026 | 146 | 21,750 | 28,739.73 |
-| July 2026 | 162 | 24,000 | 32,876.54 |
-| August 2026 | 153 | 21,500 | 29,084.97 |
+| Listing Month | Listings | Median Monthly Rent (EGP) | Baseline Raw Mean Rent (EGP) | Sensitivity Mean Rent (< 100k EGP) | Max Advertised Rent (EGP) |
+|---|---:|---:|---:|---:|---:|
+| September 2025 | 134 | 20,000.00 | 29,455.25 | 22,132.60 | 1,000,000.00 |
+| October 2025 | 170 | 20,750.00 | 23,105.88 | 23,103.55 | 66,500.00 |
+| November 2025 | 165 | 23,000.00 | 23,827.27 | 23,899.39 | 61,000.00 |
+| December 2025 | 125 | 22,500.00 | 32,611.99 | 24,150.41 | 999,999.00 |
+| January 2026 | 153 | 22,000.00 | 29,428.12 | 23,150.01 | 1,000,000.00 |
+| February 2026 | 125 | 22,500.00 | 24,400.00 | 24,400.00 | 75,500.00 |
+| March 2026 | 171 | 21,000.00 | 29,257.31 | 23,547.06 | 999,999.00 |
+| April 2026 | 166 | 22,500.00 | 30,716.87 | 24,880.37 | 1,000,000.00 |
+| May 2026 | 162 | 23,000.00 | 30,700.61 | 24,680.12 | 999,999.00 |
+| June 2026 | 146 | 21,750.00 | 43,931.49 | 23,874.13 | 1,000,000.00 |
+| July 2026 | 162 | 24,000.00 | 25,169.75 | 25,193.75 | 72,500.00 |
+| August 2026 | 153 | 21,500.00 | 25,751.64 | 25,779.61 | 91,500.00 |
 
-#### Market-Wide Findings:
-- Overall median monthly rent increases from **EGP 20,000 in September 2025** to **EGP 21,500 in August 2026**, representing an endpoint increase of **+7.5%**.
-- The highest market-wide median is recorded in **July 2026 at EGP 24,000**, followed by a moderate consolidation in August 2026 to EGP 21,500.
-- Monthly listing volumes remain relatively consistent, ranging between 125 and 171 listings per month.
+#### Market-Wide Findings & Methodological Reconciliation:
+- **Baseline Raw Mean vs. Non-Parametric Median:** The table explicitly presents both the raw parametric mean (`outputs/analysis/monthly_rental_summary.csv`) and the sensitivity-filtered mean (`outputs/analysis/monthly_rental_summary_sensitivity.csv`). Months containing extreme luxury or multi-unit listings (e.g., June 2026 with a max of EGP 1,000,000 and December 2025 with EGP 999,999) cause the raw arithmetic mean to spike artificially (surpassing **EGP 43,931.49** in June 2026 and **EGP 32,611.99** in December 2025).
+- **Stability of the Median:** In stark contrast to the volatility of the raw mean, the non-parametric median remains exceptionally stable across the entire 12-month series, navigating within a well-anchored band of **EGP 20,000 to EGP 24,000**.
+- **Sensitivity Confirmation:** When high-leverage outliers ($\text{rent} \ge 100,000\text{ EGP}$) are excluded, the sensitivity mean aligns closely with the median trend, progressing smoothly from **EGP 22,132.60** to **EGP 25,779.61**.
+- **12-Month Progression:** Overall median monthly rent increases from **EGP 20,000 in September 2025** to **EGP 21,500 in August 2026**, representing an endpoint increase of **+7.5%**.
+- **Peak and Consolidation:** The highest market-wide median is recorded in **July 2026 at EGP 24,000**, followed by consolidation in August 2026 to EGP 21,500.
+- **Listing Stability:** Monthly listing volumes remain steady throughout the year, ranging between 125 and 171 listings per month.
 
 ---
 
@@ -606,9 +617,9 @@ Maintain a traceable audit trail and avoid deleting observations solely because 
 ### Recommendation 5 — Build a Stronger Monthly Market Indicator and Leverage Momentum Findings
 
 Our empirical district momentum analysis demonstrates clear divergent trends across Cairo's submarkets:
-- High-volume satellite and prime communities (Rehab City +138.9%, Madinaty +81.0%, Zamalek +44.3%, Dokki +25.5%, Heliopolis +25.0%) demonstrated strong asking-rent momentum over the 12-month period.
-- Conversely, several dense or central submarkets (Nasr City -21.7%, Sheikh Zayed -7.1%, Downtown -4.3%) experienced softening asking medians.
-- However, as demonstrated by low-volume districts like New Administrative Capital (where 3 listings caused an apparent 128.6% surge), minimum sample thresholds (e.g., $\ge 50$ listings) are mandatory to avoid false signals.
+- High-volume satellite and prime communities with verified robust samples (Rehab City smoothed +46.8%, Zamalek +36.0% to +44.3%, Heliopolis +25.0%, 6th of October +14.1% to +22.8%, New Cairo +13.9% to +18.5%) demonstrated resilient asking-rent momentum over the 12-month period.
+- Conversely, established high-density submarkets (Nasr City -10.3% to -21.7%) and central corridors experienced softening advertised medians.
+- Crucially, as demonstrated by thin-sample submarkets like Madinaty (where 3 listings in September produced an apparent raw surge of +81.0% versus a -4.4% quarterly smoothed contraction) and El Marg (where sparse monthly observations created an artificial +263.6% spike), strict minimum sample thresholds (e.g., $\ge 50$ annual listings and $\ge 5$ monthly comparison listings) and quarterly multi-month smoothing are mandatory before committing capital based on advertised price trends.
 
 For ongoing monitoring:
 - Track district-by-month medians and sample sizes using the automated `district_momentum_analysis.py` pipeline.
@@ -757,12 +768,16 @@ To reproduce all project outputs from scratch in a single step, run the unified 
 python .\run_pipeline.py
 ```
 
-This runner executes the 14 modular scripts sequentially in dependency order, validates output generation, logs runtime metrics (~27 seconds total execution time), actively verifies that all 35 configured required deliverable paths exist and are non-empty, and ensures that all 9 visual assets and analytical tables are perfectly synchronized.
+This runner executes the 14 modular scripts sequentially in dependency order, validates output generation, logs execution metrics (~7.5 seconds in high-speed in-process mode or ~19 seconds via `python .\run_pipeline.py --subprocess`), actively audits all 35 project deliverables across the audit, cleaned, analysis, and charts directories, and ensures that all 9 visual assets and analytical tables are perfectly synchronized.
 
-Individual scripts may also be executed independently from the project root:
-`C:\Users\mw851\Desktop\sakan_rental_analysis`
+Individual scripts may also be executed independently directly from the project root directory.
 
-Activate the project's virtual environment before running Python scripts when required.
+Activate the project's virtual environment before running Python scripts when required:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python .\run_pipeline.py
+```
 
 ---
 
