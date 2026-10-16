@@ -732,7 +732,7 @@ Relevant quality-review files include:
 - `outputs/audit/district_sensitivity_detailed_comparison.csv`
 - `outputs/audit/data_integrity_summary.csv`
 
-The exact audit inventory should be verified against the files currently present in the project directory.
+The published repository contains the audit reports and quality-review files listed above. The inventory was checked against the files tracked in the repository.
 
 ### 12.7 Charts and Interactive Map
 
@@ -757,7 +757,7 @@ To reproduce all project outputs from scratch in a single step, run the unified 
 python .\run_pipeline.py
 ```
 
-This runner executes the 14 modular scripts sequentially in dependency order, validates output generation, logs runtime metrics (~27 seconds total execution time), actively verifies that all 28 project deliverables exist and are non-empty, and ensures that all 9 visual assets and analytical tables are perfectly synchronized.
+This runner executes the 14 modular scripts sequentially in dependency order, validates output generation, logs runtime metrics (~27 seconds total execution time), actively verifies that all 35 configured required deliverable paths exist and are non-empty, and ensures that all 9 visual assets and analytical tables are perfectly synchronized.
 
 Individual scripts may also be executed independently from the project root:
 `C:\Users\mw851\Desktop\sakan_rental_analysis`
