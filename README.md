@@ -525,10 +525,10 @@ A virtual environment keeps the project's Python dependencies separate from othe
 
 ### 3. Install Dependencies
 
-Install the primary data analysis and visualization libraries:
+Install the project's Python dependencies from the dependency file:
 
 ```powershell
-python -m pip install pandas numpy matplotlib seaborn plotly folium
+python -m pip install -r requirements.txt
 ```
 
 ### 4. Verify the Project Files
