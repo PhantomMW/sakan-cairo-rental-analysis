@@ -8,13 +8,13 @@
 
 
 
-\*   \*\*The Company:\*\* Sakan, Cairo's premier property technology platform.
+\*   **The Company:** Sakan, Cairo's premier property technology platform.
 
-\*   \*\*The Situation:\*\* Rapid platform growth has resulted in a massive influx of daily rental listing data. However, this raw data is heavily fragmented, noisy, and contains severe anomalies. 
+*   **The Situation:** Rapid platform growth has resulted in a massive influx of daily rental listing data. However, this raw data is heavily fragmented, noisy, and contains severe anomalies. 
 
-\*   \*\*The Objective:\*\* Sakanâ€™s executive team is targeting a major expansion in early 2027. They need a pristine analytical pipeline to transform messy web-scraped data into high-confidence business intelligence.
+*   **The Objective:** Sakan's executive team is targeting a major expansion in early 2027. They need a pristine analytical pipeline to transform messy simulated portal listing data into high-confidence business intelligence.
 
-\*   \*\*The Challenge:\*\* Before any machine learning or predictive modeling can occur, the raw dataset must be meticulously cleaned. Following data sanitization, the executive board requires a comprehensive Exploratory Data Analysis (EDA) to map out high-yield investment zones across Greater Cairo.
+*   **The Challenge:** Before any machine learning or predictive modeling can occur, the raw dataset must be meticulously cleaned. Following data sanitization, the executive board requires a comprehensive Exploratory Data Analysis (EDA) to map out high-yield investment zones across Greater Cairo.
 
 
 

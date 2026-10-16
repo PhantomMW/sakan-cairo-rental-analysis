@@ -26,6 +26,22 @@ Monthly median rent increases from EGP 20,000 in September 2025 to EGP 21,500 in
 
 The project provides a reproducible foundation for rental-market exploration. However, the results describe the available listings rather than the entire rental market. Listing prices alone do not establish tenant demand, occupancy, completed transaction prices, profitability, or the best district for expansion. Recommendations should therefore be treated as evidence-led priorities for further investigation rather than definitive investment decisions.
 
+### 1.1 Executive Candidate District Shortlist & Decision Matrix
+
+To assist Sakan's leadership in immediately prioritizing feasibility studies without conflating high advertised prices with real tenant demand or profitability, the table below synthesizes our findings across four critical operational dimensions:
+
+| Candidate District | Strategic Segment | Why It Is a Candidate (Listing Strengths) | Sample Reliability Tier | Mandatory Additional Commercial Data Required Before Investment |
+|---|---|---|---|---|
+| **New Cairo** | Primary Growth Anchor | High volume ($n=194$), steady smoothed appreciation (+13.8%), balanced median rent (EGP 35,750) and size-normalized rate (EGP 221.23/m²) | **Tier 1 (High Reliability)** | Lead-to-viewing conversion rate, tenant acquisition costs (CAC), unit turnover vacancy intervals in newer compounds. |
+| **Zamalek** | Prime Luxury Corridor | Highest market median rent (EGP 44,250) and rate/m² (EGP 283.00/m²), consistent luxury appreciation (+36.0% smoothed) | **Tier 2 (Moderate Reliability)** | Landlord concession habits, building renovation & elevator capex overheads, foreign-currency vs local tenant contract ratios. |
+| **6th of October** | West Cairo Anchor | Substantial volume ($n=156$), strong baseline expansion (+22.8% smoothed), accessible entry rent (EGP 18,250) | **Tier 1 (High Reliability)** | Commute tolerance to central Cairo, developer handover pipeline, tenant credit profiles. |
+| **Heliopolis** | Established East Hub | Large volume ($n=129$), perfectly stable appreciation (+25.0% under both raw and smoothed methods), high metro connectivity | **Tier 1 (High Reliability)** | Aging property maintenance overheads, tenant retention duration, commercial vs residential zoning demand. |
+| **Maadi** | Premium Expatriate Corridor | Large volume ($n=153$), steady low-volatility appreciation (+8.1% smoothed), premium median (EGP 34,500) | **Tier 1 (High Reliability)** | Corporate and embassy lease renewal cycles, standalone villa vs apartment vacancy rates. |
+| **Shoubra & Faisal** | High-Density Accessible Hubs | High listing volume ($n=52, 44$), accessible entry rents (EGP 8,500 & 9,500), low price/m² (<EGP 65/m²) | **Tier 3 / 4 (Sampling Drift)** | Default rates, cash-collection operational overheads, informal broker commissions, legal lease enforcement efficacy. |
+
+> [!IMPORTANT]
+> **Executive Guidance:** High advertised asking prices represent landlord supply intentions, NOT proven platform revenue. Sakan should never commit capital to premium corridors (e.g. Zamalek or New Cairo) based solely on high advertised rents without verifying actual booking conversions, occupancy rates, and tenant acquisition economics.
+
 ---
 
 ## 2. Business Context and Objectives
@@ -85,7 +101,7 @@ The project defines distinct analytical populations tailored to the specific dat
 
 | Analytical Dataset | Record Count | Eligibility Criteria | Analytical Purpose |
 |---|---:|---|---|
-| **Raw Scraped Listings** | 2,000 | Unprocessed source records | Baseline data ingestion |
+| **Raw Benchmark Listings** | 2,000 | Unprocessed simulated source records | Baseline data ingestion |
 | **Cleaned Listings** | 1,940 | Exact duplicate rows removed | Cleaning audit and raw field validation |
 | **Core Eligible Dataset** | **1,851** | Known district, positive rent, positive size | Primary district and property-feature analysis across 26 districts |
 | **Monthly & Momentum Dataset** | **1,832** | Core eligible with parseable listing date | Time-series and month-over-month trend analysis (**19 records lack dates**) |
@@ -95,15 +111,15 @@ The project defines distinct analytical populations tailored to the specific dat
 #### Key Analytical Clarifications:
 1. **Extreme Observations (Outliers):** Advertised monthly rents reach up to **EGP 1,000,000** and property sizes reach up to **22,300 m²**. Our pipeline detects, audits, and quantifies these values, and tests their influence through sensitivity scenarios. Crucially, statistical identification as an outlier does **not** prove that a record is erroneous; luxury villas and commercial-scale compounds legitimately exist. They are retained in the base dataset rather than arbitrarily discarded.
 2. **Missing Dates in Monthly Analysis:** Exactly **19 records** in the core eligible analytical dataset have unparseable or missing listing dates post-cleaning. Consequently, the monthly panel analysis evaluates $1,851 - 19 = \mathbf{1,832}$ records across the 12-month period.
-3. **Map Sample Reconciliation:** The interactive map displays **1,843 listings** rather than 1,851. Spatial rendering strictly requires valid GPS coordinates within Greater Cairo's geographic bounding box ($[29.4, 30.7]^\circ\text{N}, [30.5, 32.2]^\circ\text{E}$) and applies boundary filters ($500 < \text{rent} < 500,000\text{ EGP}$) to prevent coordinate-free records or scraper scale distortions from compromising the map interface.
+3. **Map Sample Reconciliation:** The interactive map displays **1,843 listings** rather than 1,851. Spatial rendering strictly requires valid GPS coordinates within Greater Cairo's geographic bounding box ($[29.4, 30.7]^\circ\text{N}, [30.5, 32.2]^\circ\text{E}$) and applies boundary filters ($500 < \text{rent} < 500,000\text{ EGP}$) to prevent coordinate-free records or extreme scale distortions from compromising the map interface.
 
 ### 3.4 Data Provenance, Analytical Nature, and Terms of Use
 
-- **Data Nature (Semi-Synthetic Benchmark Dataset):** The dataset is a **semi-synthetic / simulated research benchmark dataset** specifically engineered to model the statistical distribution of advertised rental properties across Greater Cairo. It models the listing structures found on leading Egyptian real estate portals (e.g., Property Finder, Aqarmap, OLX) and intentionally incorporates realistic web-scraping artifacts—such as exact duplicate rows, unstandardized currency strings ("10,000", "27500 EGP"), inconsistent furnishing labels, missing fields, and extreme high-leverage outliers (such as EGP 1,000,000 asking rents and 22,300 m² property sizes). These anomalies are systematically injected to stress-test data cleaning pipelines, audit mechanisms, and non-parametric statistical robustness.
+- **Data Nature (Semi-Synthetic Benchmark Dataset):** The dataset is a **semi-synthetic / simulated research benchmark dataset** specifically engineered to model the statistical distribution of advertised rental properties across Greater Cairo. It replicates the listing structures found on leading Egyptian real estate portals (e.g., Property Finder, Aqarmap, OLX) and intentionally incorporates realistic web-scraping artifacts—such as exact duplicate rows, unstandardized currency strings ("10,000", "27500 EGP"), inconsistent furnishing labels, missing fields, and extreme high-leverage outliers (such as EGP 1,000,000 asking rents and 22,300 m² property sizes). These anomalies are systematically injected to stress-test data cleaning pipelines, audit mechanisms, and non-parametric statistical robustness. It is **not** an actual collection of verified physical market transactions.
 - **Geographic Coordinates (Approximate & Centroid-Based):** The latitude and longitude fields are **approximate, centroid-anchored coordinates with simulated spatial dispersion (jitter)** around Greater Cairo district hubs. They are engineered to enable geospatial cluster analysis, multi-layer GIS visualization, and density heatmaps in the interactive dashboard. They do **not** represent verified cadastral surveys, physical GPS coordinates, or identifiable private street addresses.
-- **Temporal Window:** The simulated observation horizon spans a 12-month calendar period from September 2025 through August 2026.
+- **Temporal Window:** The simulated observation horizon spans a 12-month calendar period from September 2025 through August 2026. These time-series trends illustrate analytical workflow methods and must not be cited as macroeconomic evidence of real-world Egyptian property market inflation.
 - **Analytical & Educational Scope:** This project is designed as an end-to-end data engineering, statistical audit, and portfolio case study. It is not an officially verified representation of completed transactions in the Greater Cairo rental market.
-- **Asking Rents vs. Executed Contracts:** All price metrics reflect *advertised asking prices* rather than notarized or finalized lease agreements. They do not capture landlord discounting, lease negotiations, or tenant concessions.
+- **Asking Rents vs. Executed Contracts:** All price metrics reflect *advertised asking prices* within the simulation rather than notarized or finalized lease agreements. They do not capture landlord discounting, lease negotiations, or tenant concessions.
 - **Privacy & Compliance:** The dataset contains purely property-attribute records. No personal identifiable information (PII) of property owners, brokers, or tenants is collected, stored, or processed.
 
 ---
@@ -237,14 +253,15 @@ Unusually low individual listings, including records with rent values of EGP 1, 
 
 The following districts have relatively high median monthly rents in the core eligible dataset.
 
-| District | Listing Count | Median Monthly Rent (EGP) |
-|---|---:|---:|
-| Zamalek | 64 | 44,250 |
-| New Cairo | 194 | 35,750 |
-| Maadi | 153 | 34,500 |
-| Sheikh Zayed | 150 | 30,000 |
-| Mohandeseen | 110 | 26,000 |
-| Dokki | 74 | 25,750 |
+| District | Listing Count | Median Monthly Rent (EGP) | Median Price per m² (EGP/m²) |
+|---|---:|---:|---:|
+| Zamalek | 64 | 44,250 | 283.00 |
+| New Cairo | 194 | 35,750 | 221.23 |
+| Maadi | 153 | 34,500 | 217.95 |
+| Sheikh Zayed | 150 | 30,000 | 206.49 |
+| Mohandeseen | 110 | 26,000 | 176.36 |
+| Rehab City | 69 | 26,000 | 165.70 |
+| Dokki | 74 | 25,750 | 185.00 |
 
 These districts may be useful candidates for further investigation into premium rental supply. However, high advertised rent does not necessarily indicate stronger tenant demand, better occupancy, or higher profitability.
 
@@ -481,17 +498,17 @@ To determine whether asking-rent momentum reflects genuine market trends or sing
 
 | District | Total Listings | Sep / Aug Counts | Raw Endpoint Δ (%) | Q1 / Q4 Counts | Smoothed Quarterly Δ (%) | Drift (Smoothed - Raw) | Sensitivity Interpretation |
 |---|---:|---:|---:|---:|---:|---:|---|
-| **New Cairo** | 194 | 12 / 10 | +18.46% | 47 / 47 | +13.85% | -4.61% | **Highly Robust:** Consistent upward momentum across large samples. |
-| **Heliopolis** | 129 | 14 / 8 | +25.00% | 34 / 31 | +25.00% | 0.00% | **Remarkably Stable:** Exactly identical appreciation under both methods. |
-| **6th of October** | 156 | 8 / 12 | +14.06% | 38 / 41 | +22.81% | +8.75% | **Confirmed Growth:** Multi-month smoothing indicates stronger baseline expansion. |
-| **Maadi** | 153 | 11 / 19 | +5.48% | 36 / 40 | +8.15% | +2.67% | **Stable Prime Anchor:** Steady low single-digit appreciation. |
-| **Sheikh Zayed** | 150 | 12 / 8 | -7.08% | 40 / 37 | +10.34% | +17.42% | **Methodology Divergence:** August dipped, but quarterly baseline remains positive (+10.3%). |
-| **Nasr City** | 176 | 14 / 20 | -21.69% | 43 / 48 | -10.26% | +11.43% | **Confirmed Softening:** Advertised medians softened under both methodologies. |
+| **New Cairo** | 193 | 12 / 10 | +18.46% | 47 / 47 | +13.85% | -4.61% | **Highly Robust:** Consistent upward momentum across large samples. |
+| **Heliopolis** | 128 | 14 / 8 | +25.00% | 34 / 31 | +25.00% | 0.00% | **Remarkably Stable:** Exactly identical appreciation under both methods. |
+| **6th of October** | 154 | 8 / 12 | +14.06% | 38 / 41 | +22.81% | +8.75% | **Confirmed Growth:** Multi-month smoothing indicates stronger baseline expansion. |
+| **Maadi** | 151 | 11 / 19 | +5.48% | 36 / 40 | +8.15% | +2.67% | **Stable Prime Anchor:** Steady low single-digit appreciation. |
+| **Sheikh Zayed** | 149 | 12 / 8 | -7.08% | 40 / 37 | +10.34% | +17.42% | **Methodology Divergence:** August dipped, but quarterly baseline remains positive (+10.3%). |
+| **Nasr City** | 174 | 14 / 20 | -21.69% | 43 / 48 | -10.26% | +11.43% | **Confirmed Softening:** Advertised medians softened under both methodologies. |
 | **Zamalek** | 64 | 7 / 6 | +44.32% | 24 / 11 | +35.96% | -8.36% | **Substantial Luxury Appreciation:** Remains strong (+36% to +44%) across both methods. |
-| **Rehab City** | 69 | 7 / 5 | +138.89% | 20 / 17 | +46.81% | -92.08% | **High Composition Sensitivity:** Raw +138.9% was heavily distorted by small August sample ($n=5$); true smoothed trend is +46.8%. |
-| **Madinaty** | 64 | 3 / 8 | +81.03% | 16 / 19 | -4.44% | -85.47% | **False Positive in Raw Endpoint:** Raw +81% was driven by an unrepresentatively low September sample ($n=3$); quarterly baseline shows a -4.4% mild contraction. |
-| **Dokki** | 74 | 3 / 5 | +25.53% | 15 / 19 | +12.00% | -13.53% | **Moderate Growth:** Raw endpoint slightly overstated appreciation due to $n=3$ in September. |
-| **Mohandeseen** | 110 | 3 / 11 | +16.67% | 22 / 26 | -0.95% | -17.62% | **Flat Baseline:** September count of 3 created artificial gain; quarterly baseline is virtually flat (-1.0%). |
+| **Rehab City** | 68 | 7 / 5 | +138.89% | 20 / 17 | +46.81% | -92.08% | **High Composition Sensitivity:** Raw +138.9% was heavily distorted by small August sample ($n=5$); true smoothed trend is +46.8%. |
+| **Madinaty** | 64 | 3 / 8 | +81.03% | 16 / 19 | -4.44% | -85.48% | **False Positive in Raw Endpoint:** Raw +81% was driven by an unrepresentatively low September sample ($n=3$); quarterly baseline shows a -4.4% mild contraction. |
+| **Dokki** | 72 | 3 / 5 | +25.53% | 15 / 19 | +12.00% | -13.53% | **Moderate Growth:** Raw endpoint slightly overstated appreciation due to $n=3$ in September. |
+| **Mohandeseen** | 108 | 3 / 11 | +16.67% | 22 / 26 | -0.95% | -17.62% | **Flat Baseline:** September count of 3 created artificial gain; quarterly baseline is virtually flat (-1.0%). |
 
 #### Key Analytical Insights from the Sensitivity Test:
 1. **The Madinaty and Rehab City Lesson:**
@@ -505,8 +522,8 @@ To determine whether asking-rent momentum reflects genuine market trends or sing
 
 When evaluating market momentum for Sakan's 2027 strategic expansion, four critical analytical cautions must be maintained:
 
-1. **Asking Prices vs. Completed Transactions:**
-   All rental figures are scraped *advertised asking prices*. They do not capture final negotiated contract prices, rent-free concession periods, or landlord discounting. In slowing markets, advertised rents often lag actual market declines because landlords resist lowering asking prices until properties sit vacant for months.
+1. **Simulated Asking Prices vs. Completed Transactions:**
+   All rental figures represent *simulated advertised asking prices* within the benchmark model. They do not capture final negotiated contract prices, rent-free concession periods, or landlord discounting in the physical market. Furthermore, temporal shifts in this simulated benchmark must not be presented as macroeconomic proof of actual changes in Egypt's broader economy.
 2. **Property Mix and Compositional Shifts:**
    A monthly increase in median rent does not necessarily signify that existing properties appreciated. If 4-bedroom luxury penthouses are listed in one month and 1-bedroom studio apartments in the next, the median changes mechanically due to stock composition.
 3. **No Direct Proof of Tenant Demand or Gentrification:**
@@ -646,9 +663,8 @@ The current exploratory data analysis is a market-description foundation, not a 
 
 ## 11. Limitations
 
-The results should be interpreted in light of the following limitations.
-
-- Rental listings may not represent completed transactions or the full rental market.
+- **Semi-Synthetic Benchmark Data:** The dataset is an engineered benchmark simulating rental listing distributions and portal scraping noise; it does not represent verified physical transactions or macroeconomic evidence of Egyptian property inflation.
+- **Advertised Asking Prices vs. Closed Contracts:** Advertised prices reflect simulated landlord asking rents rather than negotiated, executed lease contracts or verified tenant payments.
 - Missing dates and other fields reduce the sample available for specific analyses.
 - District sample sizes vary and affect estimate stability.
 - Extreme observations may be errors or legitimate premium properties; source verification is required.

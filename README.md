@@ -16,6 +16,8 @@ Transforming Raw Rental Listings into Meaningful Market Insights
 ![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-4C72B0?style=for-the-badge)
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 ![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-Geospatial_Intelligence-2E8B57?style=for-the-badge&logo=openstreetmap&logoColor=white)
+![CI](https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-F5A623?style=for-the-badge)
 
 </div>
 
@@ -678,7 +680,11 @@ The project combines data cleaning, feature engineering, exploratory analysis, s
 
 Its district-level comparisons, property-level analysis, monthly rental trends, and interactive geographic map provide complementary perspectives on the observed rental market.
 
-By documenting data-quality decisions and maintaining clear distinctions between analytical samples, the project emphasizes transparency, reproducibility, and responsible interpretation of results.
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for complete terms and data usage guidelines.
 
 ---
 
