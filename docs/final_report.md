@@ -97,13 +97,14 @@ The project defines distinct analytical populations tailored to the specific dat
 2. **Missing Dates in Monthly Analysis:** Exactly **19 records** in the core eligible analytical dataset have unparseable or missing listing dates post-cleaning. Consequently, the monthly panel analysis evaluates $1,851 - 19 = \mathbf{1,832}$ records across the 12-month period.
 3. **Map Sample Reconciliation:** The interactive map displays **1,843 listings** rather than 1,851. Spatial rendering strictly requires valid GPS coordinates within Greater Cairo's geographic bounding box ($[29.4, 30.7]^\circ\text{N}, [30.5, 32.2]^\circ\text{E}$) and applies boundary filters ($500 < \text{rent} < 500,000\text{ EGP}$) to prevent coordinate-free records or scraper scale distortions from compromising the map interface.
 
-### 3.4 Data Provenance, Analytical Scope, and Terms of Use
+### 3.4 Data Provenance, Analytical Nature, and Terms of Use
 
-- **Data Provenance:** The dataset comprises scraped real estate rental listings advertised across Greater Cairo online property portals over a 12-month period (September 2025 – August 2026), compiled to simulate business expansion analytics for Sakan.
-- **Analytical & Educational Scope:** This project is designed for exploratory data analysis, quality auditing, pipeline orchestration, and strategic market exploration.
-- **Nature of Data (Asking vs. Transaction Prices):** All financial metrics represent *advertised asking rents* set by landlords and brokers. They do not record finalized, notarized lease agreements, tenant concessions, discounts, or vacancy rates.
-- **Privacy and Data Protection:** The records contain purely property-level attributes (district, coordinates, size, rooms, furnishing status, rent, and listing timestamp). No personal identifiable information (PII) of property owners, brokers, or tenants is collected or stored.
-- **Geographic Precision:** Geographic coordinates represent approximate property locations or localized district centroid offsets suitable for spatial clustering and heatmap density analysis, rather than survey-grade cadastral boundaries.
+- **Data Nature (Semi-Synthetic Benchmark Dataset):** The dataset is a **semi-synthetic / simulated research benchmark dataset** specifically engineered to model the statistical distribution of advertised rental properties across Greater Cairo. It models the listing structures found on leading Egyptian real estate portals (e.g., Property Finder, Aqarmap, OLX) and intentionally incorporates realistic web-scraping artifacts—such as exact duplicate rows, unstandardized currency strings ("10,000", "27500 EGP"), inconsistent furnishing labels, missing fields, and extreme high-leverage outliers (such as EGP 1,000,000 asking rents and 22,300 m² property sizes). These anomalies are systematically injected to stress-test data cleaning pipelines, audit mechanisms, and non-parametric statistical robustness.
+- **Geographic Coordinates (Approximate & Centroid-Based):** The latitude and longitude fields are **approximate, centroid-anchored coordinates with simulated spatial dispersion (jitter)** around Greater Cairo district hubs. They are engineered to enable geospatial cluster analysis, multi-layer GIS visualization, and density heatmaps in the interactive dashboard. They do **not** represent verified cadastral surveys, physical GPS coordinates, or identifiable private street addresses.
+- **Temporal Window:** The simulated observation horizon spans a 12-month calendar period from September 2025 through August 2026.
+- **Analytical & Educational Scope:** This project is designed as an end-to-end data engineering, statistical audit, and portfolio case study. It is not an officially verified representation of completed transactions in the Greater Cairo rental market.
+- **Asking Rents vs. Executed Contracts:** All price metrics reflect *advertised asking prices* rather than notarized or finalized lease agreements. They do not capture landlord discounting, lease negotiations, or tenant concessions.
+- **Privacy & Compliance:** The dataset contains purely property-attribute records. No personal identifiable information (PII) of property owners, brokers, or tenants is collected, stored, or processed.
 
 ---
 
@@ -760,17 +761,26 @@ The `outputs/charts/` folder contains 8 static PNG charts, 1 interactive HTML ma
 - `09_district_monthly_rent_momentum.png`
 - `visualization_manifest.csv`
 
-### 12.8 Reproducibility and Execution
+### 12.8 Reproducibility, Data Contracts, and Automated Testing
 
-To reproduce all project outputs from scratch in a single step, run the unified pipeline orchestrator from the project root:
+To reproduce all project outputs, validate deep data contracts, and execute the automated test suite in a single operation, run the unified pipeline orchestrator from the project root:
 
 ```powershell
 python .\run_pipeline.py
 ```
 
-This runner executes the 14 modular scripts sequentially in dependency order, validates output generation, logs execution metrics (~7.5 seconds in high-speed in-process mode or ~19 seconds via `python .\run_pipeline.py --subprocess`), actively audits all 35 project deliverables across the audit, cleaned, analysis, and charts directories, and ensures that all 9 visual assets and analytical tables are perfectly synchronized.
+The orchestrator operates a 3-phase verification system:
+1. **Phase 1 — File System Integrity:** Confirms the existence and non-zero size of all 35 project deliverables across the audit, cleaned, analysis, and charts directories.
+2. **Phase 2 — Deep Data Contracts & Content Audit:** Programmatically audits row counts (Raw=2,000, Cleaned=1,940, Core=1,851, Monthly=1,832, Map=1,843, Districts=26), asserts zero forbidden duplicates, enforces strictly positive values ($rent > 0$, $size > 0$), validates that mathematical relationships hold exactly ($price\_per\_sqm = monthly\_rent\_egp / size\_sqm$), and cross-verifies metrics against this final report.
+3. **Phase 3 — Automated Unit & Edge-Case Testing (`pytest`):** Runs the 16-test automated suite covering empty datasets, missing schema columns, zero and negative values, extreme outliers (999,999 and 1,000,000 EGP), corrupt dates, out-of-bounds coordinates, duplicate rows, unmapped districts, unrecognized furnishing values, and single-record datasets.
 
 Individual scripts may also be executed independently directly from the project root directory.
+
+To run the automated test suite directly:
+
+```powershell
+pytest -v
+```
 
 Activate the project's virtual environment before running Python scripts when required:
 

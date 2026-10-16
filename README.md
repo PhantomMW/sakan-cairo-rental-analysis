@@ -37,6 +37,7 @@ Transforming Raw Rental Listings into Meaningful Market Insights
 - [Project Structure](#project-structure)
 - [Installation and Setup](#installation-and-setup)
 - [Running the Project](#running-the-project)
+- [Automated Testing and Data Contract Auditing](#automated-testing-and-data-contract-auditing)
 - [Project Deliverables](#project-deliverables)
 - [Analytical Considerations](#analytical-considerations)
 - [Conclusion](#conclusion)
@@ -235,13 +236,14 @@ The district metadata dataset contains contextual district attributes, including
 - Average income index.
 - Metro accessibility.
 
-### 3. Data Provenance, Scope, and Terms of Use
+### 3. Data Provenance, Analytical Nature, and Terms of Use
 
-- **Data Provenance:** The dataset represents advertised rental property listings aggregated across Greater Cairo online property portals over a 12-month period (September 2025 – August 2026), compiled to simulate real-world rental expansion analytics for Sakan.
-- **Analytical & Research Scope:** This project is designed for exploratory data analysis, data quality auditing, pipeline orchestration, and geographic visualization.
-- **Nature of Data (Asking vs. Completed Contracts):** All financial metrics represent *advertised asking rents*. They reflect landlord and broker listing prices and do not capture negotiated tenant discounts, concessions, or executed lease agreements.
-- **Privacy & Compliance:** The dataset contains purely property-level attributes (district, size, rooms, furnishing, rent, coordinates, and timestamp). No personal identifiable information (PII) of property owners, tenants, or agents is present.
-- **Geographic Precision:** Geographic coordinates represent localized property or district centroid coordinates suitable for spatial clustering and heatmap exploration, rather than official cadastral boundaries.
+- **Data Nature (Semi-Synthetic Benchmark Dataset):** The dataset is a **semi-synthetic / simulated research benchmark dataset** generated to model the market distribution and structural characteristics of residential rental listings across Greater Cairo. It replicates listing structures found on major Egyptian property portals (e.g., Property Finder, Aqarmap, OLX) while deliberately injecting real-world data quality challenges—including exact duplicate listings, unformatted currency text ("10,000", "27500 EGP"), inconsistent furnishing labels, missing values, and extreme outliers (such as EGP 1,000,000 asking rents and 22,300 m² sizes). These anomalies provide a realistic environment to demonstrate automated data cleaning, quality auditing, and non-parametric statistical methods.
+- **Geographic Precision (Approximate & Centroid-Based):** Latitude and longitude coordinates are **approximate, centroid-anchored coordinates with simulated spatial dispersion (jitter)** around Greater Cairo district centers. They are tailored for interactive map clustering, layer toggling, and density heatmaps, and do not represent verified cadastral surveys or identifiable private addresses.
+- **Observation Period:** A simulated 12-calendar-month period spanning September 2025 through August 2026.
+- **Project Scope:** Educational portfolio project and analytical case study. It does not represent officially recorded lease registrations or certified market transaction data.
+- **Asking Prices vs. Executed Leases:** All pricing fields reflect *advertised asking rents* rather than executed lease contracts. They do not reflect final negotiated discounts or tenant concessions.
+- **Privacy & Compliance:** The dataset contains purely property-level attributes. No personally identifiable information (PII) is included or stored.
 
 ---
 
@@ -587,6 +589,32 @@ docs/final_report.md
 ```
 
 The generated files provide access to the cleaned data, analysis results, quality checks, and visualizations.
+
+---
+
+## Automated Testing and Data Contract Auditing
+
+The repository includes a comprehensive automated test suite powered by `pytest`, validating 16 distinct unit edge-cases, pipeline contracts, and mathematical invariants.
+
+### Running the Test Suite Directly
+
+```powershell
+pytest -v
+```
+
+### Test Suite Coverage:
+
+1. **Empty Dataset Handling:** Validates that empty source files produce structured empty schemas without crashing.
+2. **Missing Essential Columns:** Asserts that input tables missing required schema keys (`monthly_rent_egp`, `size_sqm`, `district`) fail fast with informative `ValueError` exceptions.
+3. **Zero and Negative Numerical Values:** Enforces that non-positive rents ($\le 0$) and sizes ($\le 0$) are audited into `quality_flags` and strictly excluded from the core analytical population.
+4. **Extreme Outlier Codes (999,999 & 1,000,000 EGP):** Ensures high-leverage outliers are audited, retained in core analysis for non-parametric evaluation, and excluded in sensitivity scenarios.
+5. **Invalid and Empty Timestamps:** Asserts that corrupt date formats and missing dates coerce safely to `NaT` and are excluded from monthly timeseries aggregation.
+6. **Out-of-Bounds Coordinates:** Validates that coordinates outside the Greater Cairo geospatial bounding box ($[29.4, 30.7]^\circ\text{N}, [30.5, 32.2]^\circ\text{E}$) or invalid GPS values are flagged and omitted from the interactive map.
+7. **Duplicate Row Deduplication:** Asserts exact duplicate detection removes repeated rows down to single instances.
+8. **Unmapped Districts in Metadata:** Validates left-merge joins so novel districts not present in `district_info.csv` remain intact and get logged in `outputs/audit/unmatched_districts.csv`.
+9. **Furnishing Category Normalization:** Verifies conversion of messy text variations ('semi', 'yes', 'f', 'not furnished') and auditing unmapped values.
+10. **Single-Record Dataset ($N=1$):** Ensures mathematical feature engineering (`price_per_sqm`) and aggregations execute without indexing or zero-division errors.
+11. **Production Deliverables & Contracts:** Validates exact expected row counts (Raw=2,000, Cleaned=1,940, Core=1,851, Monthly=1,832, Map=1,843, Districts=26), zero duplicates in output tables, and exact mathematical equality between `price_per_sqm` and `monthly_rent_egp / size_sqm`.
 
 ---
 

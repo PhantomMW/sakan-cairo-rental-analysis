@@ -9,7 +9,6 @@
     "core_eligible_rows": 1851,
     "rows_excluded_from_core_analysis": 89,
     "missing_dates_after_parsing": 19,
-    "unparseable_nonmissing_dates": 0,
     "unmatched_merged_rows": 19,
     "repeated_listing_id_rows_after_exact_dedup": 0,
     "furnishing_categories_after_normalization": [
